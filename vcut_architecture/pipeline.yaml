@@ -1,0 +1,284 @@
+# Vcut — Default Pipeline Orchestration Manifest (vcut.pipeline/2)
+#
+# STATUS 2026-10-26: this file still describes vcut.pipeline/2 because the runner and tests in src/ and
+# tests/ read it. The plan has moved to vcut.pipeline/3 (Mode S intake stage, stage `modes`, 05b preview,
+# 06_nle_build, AI provider per role): see Vcut_Data_Contracts.md §3.7 and Vcut_Plan_Review_2026-10-26.md
+# "Impact on existing code". Migrate this file together with the runner, not on its own.
+#
+# Execution flow: the deterministic runner builds a DAG from `depends_on`, runs every stage whose
+# dependencies are complete (and whose upstream gates are approved), and halts after a stage that
+# carries an `approval` until approvals/<gate>.json holds the hash of the artifacts listed in `approves`.
+# `loops` are the only backward edges; each is bounded by `max_rounds`.
+#
+# Mirrors the canonical stage table in Vcut_End_to_End_Pipeline_Architecture.md §3. Field definitions:
+# Vcut_Data_Contracts.md §3.7. This file holds ORCHESTRATION only: tunable values (WER threshold,
+# ducking depth, loudness targets, tolerances, delivery format, Resolve naming) live in the stage docs,
+# Data Contracts and channel_profile.yaml, never here.
+#
+# No database: stages hand off through files. Path prefixes:
+#   {run}     = projects/{project_id}/runs/{run_id}/   (per-run artifacts; an inherited stage resolves to its
+#               source run via run_manifest.json — Vcut_Data_Contracts.md §3.8)
+#   {project} = projects/{project_id}/                  (cross-run: approvals, content-addressed assets, ledger, inbox)
+
+schema: vcut.pipeline/2
+pipeline_id: standard_video_essay
+version: "2.0.0"
+
+# Asset ledger (ADR-005, shared ledger writes). Writer stages append to their own fragment; only the
+# runner merges fragments into the registry, on stage completion, under a lock with an atomic rename.
+ledger:
+  registry: "{project}/assets/asset_registry.json"
+  fragment: "{run}/ledger/{stage_id}.jsonl"
+  writers: ["03c_fill", "03d_conform", "04a_audio_sourcing", "05_timeline"]
+  merge: on_stage_complete
+  library_registry: "libraries/asset_registry.json"   # runner-only; written on library adds and after G4
+
+# LLM roles. Stages name a role, never a model. Each role is bound to a current model at implementation,
+# from the dated entries in Vcut_Tool_Allowlist.md (re-verify before each milestone).
+roles:
+  drafting:       { provider: cloud_llm, model: null }   # chapter drafting, hooks, whole-script edit
+  tagging:        { provider: cloud_llm, model: null }   # claims extraction, visual beats, moods, candidate choice
+  vision:         { provider: cloud_llm, model: null }   # yes/no QC of candidate previews (03b)
+  local_fallback: { provider: local,     model: null }   # sized to the 16 GB GPU; privacy: local_only
+
+stages:
+  # ── 01 Scriptwriting ────────────────────────────────────────────────────────────
+  - id: "01a_research_outline"
+    name: "Research, claims ledger & outline"
+    doc: "01_Scriptwriting_Engine.md"                  # process steps 1–2
+    depends_on: []
+    resource: network
+    tool_choice:
+      research: "tavily"                               # behind the research interface; fallback per Allow-list
+      synthesis: "role:tagging"
+      outline: "role:drafting"
+    inputs:
+      artifacts: ["{project}/brief.yaml", "{project}/channel_profile.yaml"]
+    outputs:
+      artifacts: ["{run}/research/claims.json", "{run}/research/sources/", "{run}/script/outline.json"]
+    approval:
+      gate: "G1"                                       # may be merged into G2 for videos under 10 min (01 Human gates)
+      approves: ["{run}/script/outline.json", "{run}/research/claims.json"]
+
+  - id: "01b_script"
+    name: "Draft, hook, edit, claim audit, originality, visual beats"
+    doc: "01_Scriptwriting_Engine.md"                  # process steps 3–9
+    depends_on: ["01a_research_outline"]
+    resource: network
+    tool_choice:
+      drafting: "role:drafting"
+      hooks: "role:drafting"
+      script_edit: "role:drafting"
+      claim_audit: "role:tagging"                      # judgement part only; extraction is code
+      visual_beats: "role:tagging"
+    inputs:
+      artifacts: ["{project}/brief.yaml", "{project}/channel_profile.yaml",
+                  "{run}/research/claims.json", "{run}/script/outline.json"]
+    outputs:
+      artifacts: ["{run}/script/script_manifest.json"]
+    approval:
+      gate: "G2"                                       # script lock: blocks all TTS, downloads and generation
+      approves: ["{run}/script/script_manifest.json", "{run}/research/claims.json", "{project}/channel_profile.yaml#lexicon"]
+
+  # ── After G2: three parallel branches ───────────────────────────────────────────
+  - id: "02_voice"
+    name: "Voice units, word timing & QC"
+    doc: "02_Voice_and_Timing.md"
+    depends_on: ["01b_script"]
+    resource: gpu
+    tool_choice:
+      tts_engine: "kokoro"                             # kokoro | elevenlabs | owner_voice (ADR-008)
+      timing: "tts_native"                             # ladder (ADR-015): tts_native → forced_alignment → asr_fallback
+      forced_aligner: "whisperx"                       # owner-voice path and null native timings; licence check at M0
+      qc_engine: "faster_whisper"                      # QC only, never an aligner
+    inputs:
+      artifacts: ["{run}/script/script_manifest.json", "{project}/channel_profile.yaml"]
+    outputs:
+      artifacts: ["{run}/voice/units/", "{run}/voice/timing.json"]
+
+  - id: "03a_candidates"
+    name: "Candidate search (previews only)"
+    doc: "03_Shot_Planning_and_Visuals.md"
+    depends_on: ["01b_script"]
+    resource: network
+    tool_choice:
+      stock_providers: ["pexels", "pixabay"]           # allow-list order; channel library searched first
+    inputs:
+      artifacts: ["{run}/script/script_manifest.json", "{project}/channel_profile.yaml"]
+    outputs:
+      artifacts: ["{run}/shots/candidates.json"]
+
+  - id: "04a_audio_sourcing"
+    name: "Music & SFX shortlist from licensed libraries"
+    doc: "04_Music_SFX_and_Ducking.md"
+    depends_on: ["01b_script"]
+    resource: cpu
+    tool_choice:
+      music_source: "local_library"
+      sfx_source: "local_library"                      # Freesound top-ups only after UPF/MTG confirms commercial API use
+    inputs:
+      artifacts: ["{run}/script/script_manifest.json", "{project}/channel_profile.yaml"]
+    outputs:
+      artifacts: ["{run}/audio/shortlist.json", "{run}/ledger/04a_audio_sourcing.jsonl"]
+
+  # ── 03 Shot planning → G3 → fill ────────────────────────────────────────────────
+  - id: "03b_shot_plan"
+    name: "Shot plan, ranking & cost estimate"
+    doc: "03_Shot_Planning_and_Visuals.md"
+    depends_on: ["02_voice", "03a_candidates"]
+    resource: network
+    tool_choice:
+      segmentation: "role:tagging"                     # proposals only; code enforces cadence and computes frames
+      embeddings: "clip_siglip"
+      vision_qc: "role:vision"
+    inputs:
+      artifacts: ["{run}/script/script_manifest.json", "{run}/voice/timing.json",
+                  "{run}/shots/candidates.json", "{project}/brief.yaml"]
+    outputs:
+      artifacts: ["{run}/shots/shot_plan.json", "{run}/shots/contact_sheet.html"]
+    approval:
+      gate: "G3"                                       # shot plan + cost: blocks every paid download and generation
+      approves: ["{run}/shots/shot_plan.json", "{project}/overrides.yaml"]
+
+  - id: "03c_fill"
+    name: "Fill: download, graphics, capped generative, fallbacks"
+    doc: "03_Shot_Planning_and_Visuals.md"
+    depends_on: ["03b_shot_plan"]
+    resource: network
+    tool_choice:
+      stock_providers: ["pexels", "pixabay"]
+      graphics: "python_renderer"                      # ProRes 4444 / RGBA PNG sequences (ADR-012)
+      generative_provider: null                        # none until M3; set from the Allow-list when enabled
+    inputs:
+      artifacts: ["{run}/shots/shot_plan.json", "{project}/inbox/"]
+    outputs:
+      artifacts: ["{project}/assets/", "{run}/ledger/03c_fill.jsonl"]
+
+  - id: "03d_conform"
+    name: "Probe & conform media"
+    doc: "03_Shot_Planning_and_Visuals.md"
+    depends_on: ["03c_fill"]
+    resource: cpu
+    tool_choice:
+      conform_engine: "ffmpeg"
+    inputs:
+      artifacts: ["{project}/assets/asset_registry.json"]
+    outputs:
+      artifacts: ["{project}/assets/conformed/", "{run}/ledger/03d_conform.jsonl"]   # patches `inventory`
+
+  - id: "03e_edit_assembly"
+    name: "Edit assembly (trims with handles, transitions)"
+    doc: "03_Shot_Planning_and_Visuals.md"
+    depends_on: ["03d_conform"]
+    resource: cpu
+    tool_choice: {}
+    inputs:
+      artifacts: ["{run}/shots/shot_plan.json", "{run}/voice/timing.json", "{project}/assets/asset_registry.json"]
+    outputs:
+      artifacts: ["{run}/shots/cut_list.json"]
+
+  # ── 04b Audio placement (needs the cut list) ────────────────────────────────────
+  - id: "04b_audio_placement"
+    name: "Music fitting, SFX placement & ducking spec"
+    doc: "04_Music_SFX_and_Ducking.md"
+    depends_on: ["03e_edit_assembly", "04a_audio_sourcing", "02_voice"]
+    resource: cpu
+    tool_choice:
+      beat_detection: "librosa"
+      baked_stems: "ffmpeg"                            # only when the ducking carrier is baked_stem
+    inputs:
+      artifacts: ["{run}/shots/cut_list.json", "{run}/voice/timing.json",
+                  "{run}/audio/shortlist.json", "{run}/script/script_manifest.json"]
+    outputs:
+      artifacts: ["{run}/audio/audio_plan.json"]
+
+  # ── 05 Compile & validate ───────────────────────────────────────────────────────
+  - id: "05_timeline"
+    name: "Compile canonical timeline, export, validate"
+    doc: "05_Timeline_Manifest_and_QA.md"
+    depends_on: ["03e_edit_assembly", "04b_audio_placement", "02_voice", "01b_script"]
+    resource: cpu
+    tool_choice:
+      compiler: "vcut_timeline_compiler"
+      validator: "vcut_schema_validator"
+      otio_exporter: "opentimelineio"
+      fcpxml_exporter: "vcut_fcpxml_writer"
+    inputs:
+      artifacts: ["{run}/shots/cut_list.json", "{run}/audio/audio_plan.json", "{run}/voice/timing.json",
+                  "{run}/script/script_manifest.json", "{project}/assets/asset_registry.json",
+                  "{project}/brief.yaml", "{project}/channel_profile.yaml"]
+    outputs:
+      artifacts: ["{run}/timeline/vcut_timeline.json", "{run}/timeline/exports/", "{run}/qa/qa_report.json",
+                  "{run}/delivery/credits_draft.txt", "{run}/delivery/disclosure.json",
+                  "{run}/ledger/05_timeline.jsonl"]                 # `usage` rows
+
+  # ── 06 Resolve build ────────────────────────────────────────────────────────────
+  - id: "06_resolve"
+    name: "Resolve build, readback & project backup"
+    doc: "06_NLE_Adapters.md"
+    depends_on: ["05_timeline"]                        # and qa_report.json has no errors (loop L4)
+    resource: resolve
+    tool_choice:
+      nle_adapter: "davinci_resolve_script"            # official module; FREE mode emits FCPXML + instructions
+    inputs:
+      artifacts: ["{run}/timeline/vcut_timeline.json", "{run}/timeline/exports/", "{run}/qa/qa_report.json"]
+    outputs:
+      artifacts: ["{run}/resolve/build_report.json", "{run}/resolve/project_backup.drp", "{run}/resolve/timeline_audit.otio"]
+
+  # ── 07 Review & delivery ────────────────────────────────────────────────────────
+  - id: "07a_review_qc"
+    name: "Human review in Resolve, mix & loudness QC"
+    doc: "07_Human_Review_and_Delivery.md"
+    depends_on: ["06_resolve"]
+    resource: human
+    tool_choice:
+      loudness_meter: "ffmpeg"                         # ebur128 / loudnorm measure mode on the rendered master
+    inputs:
+      artifacts: ["{run}/resolve/build_report.json", "{run}/qa/qa_report.json", "{run}/delivery/disclosure.json"]
+    outputs:
+      artifacts: ["{run}/delivery/master.mp4", "{run}/delivery/stems/", "{run}/qa/loudness_report.json"]
+    approval:
+      gate: "G4"                                       # final review: blocks the delivery package
+      approves: ["{run}/delivery/master.mp4", "{run}/qa/loudness_report.json", "{run}/delivery/disclosure.json"]
+
+  - id: "07b_package"
+    name: "Captions, chapters, description, credits, upload checklist"
+    doc: "07_Human_Review_and_Delivery.md"
+    depends_on: ["07a_review_qc"]
+    resource: resolve                                  # reads the final timeline back (FULL mode)
+    tool_choice: {}
+    inputs:
+      artifacts: ["{run}/voice/timing.json", "{run}/script/script_manifest.json", "{run}/research/claims.json",
+                  "{project}/assets/asset_registry.json", "{run}/delivery/disclosure.json"]
+    outputs:
+      artifacts: ["{run}/delivery/captions.srt", "{run}/delivery/captions.vtt", "{run}/delivery/chapters.txt",
+                  "{run}/delivery/description.md", "{run}/delivery/credits.txt", "{run}/delivery/titles.md",
+                  "{run}/delivery/thumbnail_brief.md", "{run}/delivery/upload_checklist.md",
+                  "{run}/delivery/edit_stats.json"]
+
+# Backward edges (Architecture §3–4). Everything else flows forward only.
+loops:
+  - id: "L1"
+    from: "02_voice"
+    to: "01b_script"
+    trigger: "chapter duration outside budget after TTS speed adjustment"
+    max_rounds: 2
+    reapproval: "G2"                                   # light re-approval of the text diff only
+  - id: "L2"
+    from: "03c_fill"
+    to: "03b_shot_plan"
+    trigger: "slot unfillable after its fallback chain"
+    max_rounds: 1
+    reapproval: "G3"                                   # only if the re-plan changes cost
+  - id: "L3"
+    from: "02_voice"
+    to: "02_voice"
+    trigger: "unit WER above threshold"
+    max_rounds: 2
+    reapproval: null                                   # internal; then a red review marker
+  - id: "L4"
+    from: "05_timeline"
+    to: ["03e_edit_assembly", "04b_audio_placement"]   # the stage that owns the failing item
+    trigger: "qa_report.json has errors"
+    max_rounds: 2
+    reapproval: null

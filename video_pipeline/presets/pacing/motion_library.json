@@ -1,0 +1,397 @@
+{
+  "schema": "pipeline.motion_library/1",
+  "revision": "2026-11-09",
+  "doc": "PACING_AND_ENRICHMENT.md section 6",
+  "rect_format": "[x, y, w, h], all normalized 0..1, relative to the source already scaled to cover the 16:9 canvas (same convention as shot_plan motion.start_rect / end_rect). Convert to FilmCraft scale/position keyframes with pacing_lib.rect_to_scale_pos.",
+  "selection_rules": {
+    "cooldown_slots": 2,
+    "max_consecutive_same_move": 2,
+    "no_same_direction_twice": true,
+    "max_share_of_stills": 0.35,
+    "face_safe": "Anchor every move on the subject's eyes; a move with faces_safe=false is never used on a portrait or a face-bearing frame.",
+    "log": "Every chosen move is appended to motion_log.json: slot/beat id, move id, direction, preset, reason."
+  },
+  "moves": {
+    "push_slow": {
+      "label": "Slow push",
+      "maps_to": "mot.push_in",
+      "start_rect": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "end_rect": [
+        0.03,
+        0.03,
+        0.94,
+        0.94
+      ],
+      "direction": "in",
+      "intensity": 1,
+      "emotions": [
+        "calm",
+        "grief",
+        "neutral",
+        "tension"
+      ],
+      "subjects": [
+        "portrait",
+        "group",
+        "wide",
+        "object",
+        "landscape"
+      ],
+      "faces_safe": true,
+      "counts_as_event": false,
+      "ease": "in_out"
+    },
+    "push_in": {
+      "label": "Push in (standard Ken Burns)",
+      "maps_to": "mot.push_in",
+      "start_rect": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "end_rect": [
+        0.06,
+        0.06,
+        0.88,
+        0.88
+      ],
+      "direction": "in",
+      "intensity": 2,
+      "emotions": [
+        "tension",
+        "joy",
+        "neutral"
+      ],
+      "subjects": [
+        "portrait",
+        "group",
+        "wide",
+        "object"
+      ],
+      "faces_safe": true,
+      "counts_as_event": false,
+      "ease": "in_out"
+    },
+    "pull_back": {
+      "label": "Pull-back",
+      "maps_to": "mot.pull_out",
+      "start_rect": [
+        0.07,
+        0.07,
+        0.86,
+        0.86
+      ],
+      "end_rect": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "direction": "out",
+      "intensity": 2,
+      "emotions": [
+        "grief",
+        "calm",
+        "neutral"
+      ],
+      "subjects": [
+        "portrait",
+        "group",
+        "wide",
+        "landscape"
+      ],
+      "faces_safe": true,
+      "counts_as_event": false,
+      "ease": "in_out",
+      "note": "Context arrives at the end: use when the line widens from a person to their situation."
+    },
+    "drift_left": {
+      "label": "Drift left",
+      "maps_to": "mot.pan",
+      "start_rect": [
+        0.05,
+        0.03,
+        0.92,
+        0.92
+      ],
+      "end_rect": [
+        0.0,
+        0.03,
+        0.92,
+        0.92
+      ],
+      "direction": "left",
+      "intensity": 1,
+      "emotions": [
+        "calm",
+        "grief",
+        "neutral"
+      ],
+      "subjects": [
+        "wide",
+        "group",
+        "landscape",
+        "object"
+      ],
+      "faces_safe": true,
+      "counts_as_event": false,
+      "ease": "linear"
+    },
+    "drift_right": {
+      "label": "Drift right",
+      "maps_to": "mot.pan",
+      "start_rect": [
+        0.0,
+        0.03,
+        0.92,
+        0.92
+      ],
+      "end_rect": [
+        0.05,
+        0.03,
+        0.92,
+        0.92
+      ],
+      "direction": "right",
+      "intensity": 1,
+      "emotions": [
+        "calm",
+        "grief",
+        "joy",
+        "neutral"
+      ],
+      "subjects": [
+        "wide",
+        "group",
+        "landscape",
+        "object"
+      ],
+      "faces_safe": true,
+      "counts_as_event": false,
+      "ease": "linear"
+    },
+    "pan_wide": {
+      "label": "Pan across a wide image",
+      "maps_to": "mot.pan",
+      "start_rect": [
+        0.0,
+        0.04,
+        0.9,
+        0.9
+      ],
+      "end_rect": [
+        0.1,
+        0.04,
+        0.9,
+        0.9
+      ],
+      "direction": "right",
+      "intensity": 2,
+      "emotions": [
+        "calm",
+        "joy",
+        "neutral"
+      ],
+      "subjects": [
+        "wide",
+        "landscape",
+        "document"
+      ],
+      "faces_safe": true,
+      "requires": "source aspect ratio >= 1.9 (panorama, wide group photo) or a document with a long line; rects are relative to the source already scaled to cover the canvas",
+      "counts_as_event": false,
+      "ease": "in_out"
+    },
+    "reveal": {
+      "label": "Reveal (start tight on a detail, pull out to the whole)",
+      "maps_to": "mot.pull_out",
+      "start_rect": "target_rect",
+      "end_rect": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "direction": "out",
+      "intensity": 3,
+      "emotions": [
+        "tension",
+        "joy",
+        "neutral"
+      ],
+      "subjects": [
+        "group",
+        "wide",
+        "object",
+        "document"
+      ],
+      "faces_safe": true,
+      "requires": "target_rect (the detail to open on); its area must be <= 0.65 of the frame",
+      "counts_as_event": true,
+      "event_at": 0.5,
+      "ease": "out"
+    },
+    "detail_crop": {
+      "label": "Detail crop (re-frame to a different part of the same image)",
+      "maps_to": "mot.push_in",
+      "start_rect": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "end_rect": "target_rect",
+      "direction": "in",
+      "intensity": 3,
+      "emotions": [
+        "tension",
+        "neutral",
+        "joy"
+      ],
+      "subjects": [
+        "group",
+        "wide",
+        "object",
+        "document"
+      ],
+      "faces_safe": true,
+      "requires": "target_rect; area change versus the previous framing >= 0.35 so it reads as a new shot",
+      "counts_as_event": true,
+      "event_at": 0.5,
+      "ease": "in_out",
+      "note": "May also be built as a hard cut to the cropped framing (preferred on the key word)."
+    },
+    "punch_in": {
+      "label": "Punch-in (fast zoom on the key word)",
+      "maps_to": "mot.zoom_punch",
+      "start_rect": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "end_rect": [
+        0.07,
+        0.07,
+        0.86,
+        0.86
+      ],
+      "direction": "in",
+      "intensity": 4,
+      "emotions": [
+        "tension",
+        "joy"
+      ],
+      "subjects": [
+        "portrait",
+        "group",
+        "object"
+      ],
+      "faces_safe": true,
+      "duration_frames": 8,
+      "counts_as_event": true,
+      "event_at": "anchor_word",
+      "ease": "out",
+      "note": "Max 3 per 10 min; never on grief beats."
+    },
+    "handheld_micro": {
+      "label": "Handheld micro-shake",
+      "maps_to": "mot.handheld",
+      "start_rect": [
+        0.02,
+        0.02,
+        0.96,
+        0.96
+      ],
+      "end_rect": [
+        0.02,
+        0.02,
+        0.96,
+        0.96
+      ],
+      "direction": "none",
+      "intensity": 3,
+      "emotions": [
+        "tension"
+      ],
+      "subjects": [
+        "wide",
+        "object",
+        "landscape"
+      ],
+      "faces_safe": false,
+      "counts_as_event": false,
+      "amplitude_px": 3,
+      "note": "Never on documents, text or portraits."
+    },
+    "rack_focus": {
+      "label": "Focus pull",
+      "maps_to": "mot.focus_pull",
+      "start_rect": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "end_rect": [
+        0.03,
+        0.03,
+        0.94,
+        0.94
+      ],
+      "direction": "in",
+      "intensity": 2,
+      "emotions": [
+        "tension",
+        "grief",
+        "neutral"
+      ],
+      "subjects": [
+        "portrait",
+        "object"
+      ],
+      "faces_safe": true,
+      "counts_as_event": true,
+      "event_at": 0.35,
+      "ease": "in_out"
+    },
+    "parallax_25d": {
+      "label": "2.5D parallax (opt-in, needs a depth model)",
+      "maps_to": "mot.parallax_25d",
+      "start_rect": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "end_rect": [
+        0.04,
+        0.04,
+        0.92,
+        0.92
+      ],
+      "direction": "in",
+      "intensity": 2,
+      "emotions": [
+        "calm",
+        "joy",
+        "neutral"
+      ],
+      "subjects": [
+        "portrait",
+        "wide",
+        "landscape"
+      ],
+      "faces_safe": true,
+      "optional": true,
+      "counts_as_event": false,
+      "ease": "in_out"
+    }
+  }
+}

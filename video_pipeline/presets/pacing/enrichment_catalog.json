@@ -1,0 +1,519 @@
+{
+  "schema": "pipeline.enrichment/1",
+  "revision": "2026-11-09",
+  "doc": "PACING_AND_ENRICHMENT.md section 3",
+  "tiers": {
+    "A": "In-frame camera work on the same picture (free, always available, uncapped but subject to motion variety rules)",
+    "B": "Overlay on the picture: house graphic families, annotations, text emphasis",
+    "C": "Full-frame plate that REPLACES the still for its duration (distinct shot: ends the still run)",
+    "D": "Cutaway to other material (distinct shot: ends the still run)",
+    "S": "Support only (audio). Never counts as an enrichment event on its own."
+  },
+  "event_rule": "An enrichment event is a change the viewer can SEE and that the narration motivates, anchored to a spoken word. Tiers A and B are events inside a still run. Tiers C and D end the run instead. Tier S never counts.",
+  "types": {
+    "detail_crop": {
+      "tier": "A",
+      "label": "Detail crop / re-frame to a new part of the image",
+      "tool": "motion_library detail_crop",
+      "counts_as_event": true,
+      "cap_per_10min": null,
+      "cues": [
+        "a named object",
+        "a face in a crowd",
+        "a line of text in a document",
+        "'look at', 'notice', 'there, in the corner'"
+      ]
+    },
+    "reveal": {
+      "tier": "A",
+      "label": "Reveal: open on a detail, pull out to the whole",
+      "tool": "motion_library reveal",
+      "counts_as_event": true,
+      "cap_per_10min": null,
+      "cues": [
+        "'it turned out', 'what nobody saw', surprise or scale of a scene"
+      ]
+    },
+    "punch_in": {
+      "tier": "A",
+      "label": "Punch-in on the key word",
+      "tool": "motion_library punch_in",
+      "counts_as_event": true,
+      "cap_per_10min": 3,
+      "cues": [
+        "pivot word in a tense or joyful beat"
+      ]
+    },
+    "rack_focus": {
+      "tier": "A",
+      "label": "Focus pull onto the subject",
+      "tool": "motion_library rack_focus",
+      "counts_as_event": true,
+      "cap_per_10min": null,
+      "cues": [
+        "a person named for the first time",
+        "a quiet realisation"
+      ]
+    },
+    "parallax_25d": {
+      "tier": "A",
+      "label": "2.5D parallax (opt-in)",
+      "tool": "motion_library parallax_25d",
+      "counts_as_event": false,
+      "cap_per_10min": 2,
+      "cues": [
+        "establishing place or portrait that deserves depth"
+      ]
+    },
+    "photo_annotation": {
+      "tier": "B",
+      "label": "Ellipse draw-on plus label on a detail",
+      "tool": "presets/documentary-default/photo-annotation",
+      "counts_as_event": true,
+      "cap_per_10min": null,
+      "cues": [
+        "pointing at a person, object, sign or caption inside the picture"
+      ]
+    },
+    "spotlight": {
+      "tier": "B",
+      "label": "Dim the rest, light the target",
+      "tool": "render_card spotlight (E6) / FilmCraft mask",
+      "counts_as_event": true,
+      "cap_per_10min": 3,
+      "cues": [
+        "one face in a group photo",
+        "one item in clutter"
+      ]
+    },
+    "keyword_pop": {
+      "tier": "B",
+      "label": "One pivot word pops beside the subject",
+      "tool": "presets/documentary-default/keyword-pop",
+      "counts_as_event": true,
+      "cap_per_10min": 2,
+      "cues": [
+        "the single word the beat turns on ('NO.', 'DECLINED')"
+      ]
+    },
+    "kinetic_quote": {
+      "tier": "B",
+      "label": "Spoken quote, word by word, emphasis in gold",
+      "tool": "presets/documentary-default/kinetic-quote",
+      "counts_as_event": true,
+      "cap_per_10min": 3,
+      "cues": [
+        "short quotation (<= 25 words) read aloud"
+      ]
+    },
+    "stat_counter": {
+      "tier": "B",
+      "label": "Count-up number with label",
+      "tool": "presets/documentary-default/stat-counter",
+      "counts_as_event": true,
+      "cap_per_10min": 3,
+      "cues": [
+        "a number is the beat ('5,000 boys', '$4,000,000')"
+      ]
+    },
+    "location_stamp": {
+      "tier": "B",
+      "label": "Typed place and date",
+      "tool": "presets/documentary-default/location-stamp",
+      "counts_as_event": true,
+      "cap_per_10min": null,
+      "cues": [
+        "new place or time jump"
+      ]
+    },
+    "date_strip": {
+      "tier": "B",
+      "label": "Date pill / timeline bar",
+      "tool": "render_card --type date_strip",
+      "counts_as_event": true,
+      "cap_per_10min": 2,
+      "cues": [
+        "chronology jump over 2 years"
+      ]
+    },
+    "person_pin": {
+      "tier": "B",
+      "label": "Ring + leader + name plate on a person in frame",
+      "tool": "presets/documentary-default/person-pin",
+      "counts_as_event": true,
+      "cap_per_10min": null,
+      "cues": [
+        "naming one person inside a group shot"
+      ]
+    },
+    "lower_third": {
+      "tier": "B",
+      "label": "Name plate",
+      "tool": "presets/documentary-default/lower-third",
+      "counts_as_event": true,
+      "cap_per_10min": 4,
+      "cues": [
+        "first appearance of a named person"
+      ]
+    },
+    "group_legend": {
+      "tier": "B",
+      "label": "'In this photo' names band",
+      "tool": "presets/documentary-default/group-legend",
+      "counts_as_event": true,
+      "cap_per_10min": null,
+      "cues": [
+        "group photo, names known but not positions"
+      ]
+    },
+    "source_tag": {
+      "tier": "B",
+      "label": "Truth-tier chip + source",
+      "tool": "presets/documentary-default/source-tag",
+      "counts_as_event": true,
+      "cap_per_10min": null,
+      "cues": [
+        "quoted or reported claim"
+      ]
+    },
+    "article_highlight": {
+      "tier": "B",
+      "label": "Marker sweep over the exact quote on a document image",
+      "tool": "presets/documentary-default/article-highlight / render_article.py",
+      "counts_as_event": true,
+      "cap_per_10min": 3,
+      "cues": [
+        "written evidence cited as proof"
+      ]
+    },
+    "timeline_strip": {
+      "tier": "B",
+      "label": "2-5 event band",
+      "tool": "presets/documentary-default/timeline-strip",
+      "counts_as_event": true,
+      "cap_per_10min": 2,
+      "cues": [
+        "life-arc recap"
+      ]
+    },
+    "story_tracker": {
+      "tier": "B",
+      "label": "Story hand-off chip row",
+      "tool": "presets/documentary-default/story-tracker",
+      "counts_as_event": true,
+      "cap_per_10min": null,
+      "cues": [
+        "switching between subjects"
+      ]
+    },
+    "map": {
+      "tier": "C",
+      "label": "Purposeful map (route, locator, distance)",
+      "tool": "render_map.py / AniMaps",
+      "counts_as_event": false,
+      "ends_still_run": true,
+      "cap_per_10min": 2,
+      "cues": [
+        "geography IS the beat: journey, distance, border, before/after"
+      ],
+      "guard": "A place that is merely mentioned does NOT get a map (Toolkit 2.3)."
+    },
+    "article_card": {
+      "tier": "C",
+      "label": "Full-frame article / document card",
+      "tool": "render_article.py",
+      "counts_as_event": false,
+      "ends_still_run": true,
+      "cap_per_10min": 3,
+      "cues": [
+        "headline or legal text is the beat"
+      ]
+    },
+    "quote_card": {
+      "tier": "C",
+      "label": "Quote pull-out over dimmed plate",
+      "tool": "presets/documentary-default/quote-pullout",
+      "counts_as_event": false,
+      "ends_still_run": true,
+      "cap_per_10min": 3,
+      "cues": [
+        "long quotation (> 25 words)"
+      ]
+    },
+    "then_now": {
+      "tier": "C",
+      "label": "Then / now role struck through",
+      "tool": "presets/documentary-default/then-now",
+      "counts_as_event": false,
+      "ends_still_run": true,
+      "cap_per_10min": null,
+      "cues": [
+        "'where are they now' payoff"
+      ]
+    },
+    "split_screen": {
+      "tier": "C",
+      "label": "Two images side by side",
+      "tool": "ffmpeg hstack / FilmCraft",
+      "counts_as_event": false,
+      "ends_still_run": true,
+      "cap_per_10min": 2,
+      "cues": [
+        "before/after, claimed vs real"
+      ]
+    },
+    "photo_stack": {
+      "tier": "C",
+      "label": "Archival photo stack",
+      "tool": "Pillow composite + mot.photo_stack",
+      "counts_as_event": false,
+      "ends_still_run": true,
+      "cap_per_10min": 1,
+      "cues": [
+        "rapid sequence of supporting proofs"
+      ]
+    },
+    "stat_plate": {
+      "tier": "C",
+      "label": "Full-frame big number",
+      "tool": "render_card --type big_number",
+      "counts_as_event": false,
+      "ends_still_run": true,
+      "cap_per_10min": 3,
+      "cues": [
+        "scale surprise"
+      ]
+    },
+    "narration_plate": {
+      "tier": "C",
+      "label": "Key-fact plate built from the line itself on a texture plate (last-resort fallback that is always available)",
+      "tool": "kinetic_quote / render_card on look.archival texture",
+      "counts_as_event": false,
+      "ends_still_run": true,
+      "cap_per_10min": 6,
+      "cues": [
+        "no second asset exists for a long beat"
+      ],
+      "guard": "Text must be verbatim narration or a verified fact; 2.5-3.5 s. Heavy use (> 2 per 10 min) means the research failed: asset_audit.py raises research requests; do not hide it."
+    },
+    "broll_cutaway": {
+      "tier": "D",
+      "label": "Cutaway to related B-roll or ALT image",
+      "tool": "ALT tracks / media_search.py",
+      "counts_as_event": false,
+      "ends_still_run": true,
+      "cap_per_10min": null,
+      "cues": [
+        "any beat; first choice for a long hold"
+      ]
+    },
+    "archival_insert": {
+      "tier": "D",
+      "label": "Archival footage insert (muted)",
+      "tool": "media_search.py / owner inbox",
+      "counts_as_event": false,
+      "ends_still_run": true,
+      "cap_per_10min": null,
+      "cues": [
+        "event described has period footage"
+      ]
+    },
+    "sfx_accent": {
+      "tier": "S",
+      "label": "SFX hit or whoosh",
+      "tool": "presets/documentary-default/sfx",
+      "counts_as_event": false,
+      "cap_per_10min": null,
+      "cues": [
+        "supports a visual event; never replaces one"
+      ]
+    },
+    "music_swell": {
+      "tier": "S",
+      "label": "Music swell or duck",
+      "tool": "ffmpeg sidechain",
+      "counts_as_event": false,
+      "cap_per_10min": null,
+      "cues": [
+        "supports a visual event; never replaces one"
+      ]
+    },
+    "map_overlay": {
+      "tier": "B",
+      "label": "Map drawn as a transparent overlay on footage or a still",
+      "tool": "render_map.py --alpha-overlay",
+      "counts_as_event": true,
+      "cap_per_10min": 2,
+      "cues": [
+        "geography IS the beat but the picture should stay visible"
+      ],
+      "guard": "Shares the map cap (max 2 per 10 min across map + map_overlay)."
+    },
+    "stamp": {
+      "tier": "B",
+      "label": "Angled document stamp (CONFIRMED / ARCHIVED)",
+      "tool": "render_card --type stamp",
+      "counts_as_event": true,
+      "cap_per_10min": 2,
+      "cues": [
+        "critical document reveal"
+      ]
+    }
+  },
+  "narration_to_method": [
+    {
+      "cue": "a person is named",
+      "first_choice": [
+        "lower_third",
+        "person_pin"
+      ],
+      "fallback": [
+        "rack_focus",
+        "detail_crop"
+      ]
+    },
+    {
+      "cue": "a place or journey that IS the story",
+      "first_choice": [
+        "map"
+      ],
+      "fallback": [
+        "location_stamp",
+        "pull_back"
+      ]
+    },
+    {
+      "cue": "a place only mentioned",
+      "first_choice": [
+        "location_stamp"
+      ],
+      "fallback": [
+        "broll_cutaway"
+      ]
+    },
+    {
+      "cue": "a number or amount",
+      "first_choice": [
+        "stat_counter",
+        "stat_plate"
+      ],
+      "fallback": [
+        "keyword_pop"
+      ]
+    },
+    {
+      "cue": "a date or time jump",
+      "first_choice": [
+        "date_strip",
+        "location_stamp"
+      ],
+      "fallback": [
+        "timeline_strip"
+      ]
+    },
+    {
+      "cue": "a quote is read",
+      "first_choice": [
+        "kinetic_quote",
+        "quote_card"
+      ],
+      "fallback": [
+        "source_tag"
+      ]
+    },
+    {
+      "cue": "a document or headline is cited",
+      "first_choice": [
+        "article_highlight",
+        "article_card"
+      ],
+      "fallback": [
+        "detail_crop",
+        "source_tag"
+      ]
+    },
+    {
+      "cue": "an object or detail in the picture",
+      "first_choice": [
+        "photo_annotation",
+        "detail_crop"
+      ],
+      "fallback": [
+        "spotlight",
+        "reveal"
+      ]
+    },
+    {
+      "cue": "one face in a group",
+      "first_choice": [
+        "spotlight",
+        "person_pin"
+      ],
+      "fallback": [
+        "detail_crop"
+      ]
+    },
+    {
+      "cue": "contrast (then/now, claimed/real)",
+      "first_choice": [
+        "split_screen",
+        "then_now"
+      ],
+      "fallback": [
+        "broll_cutaway"
+      ]
+    },
+    {
+      "cue": "a list or run of proofs",
+      "first_choice": [
+        "photo_stack",
+        "timeline_strip"
+      ],
+      "fallback": [
+        "broll_cutaway"
+      ]
+    },
+    {
+      "cue": "pivot word of the beat",
+      "first_choice": [
+        "keyword_pop",
+        "punch_in"
+      ],
+      "fallback": [
+        "detail_crop"
+      ]
+    },
+    {
+      "cue": "emotional beat, nothing concrete",
+      "first_choice": [
+        "pull_back",
+        "rack_focus"
+      ],
+      "fallback": [
+        "broll_cutaway"
+      ]
+    },
+    {
+      "cue": "event described has period footage",
+      "first_choice": [
+        "archival_insert"
+      ],
+      "fallback": [
+        "broll_cutaway"
+      ]
+    },
+    {
+      "cue": "nothing available at all",
+      "first_choice": [
+        "narration_plate"
+      ],
+      "fallback": []
+    }
+  ],
+  "fix_order_for_long_still": [
+    "1. Add a distinct asset (second picture or footage) on the words that change topic (broll_cutaway / archival_insert).",
+    "2. Replace part of the hold with a full-frame plate (map, article_card, quote_card, stat_plate, then_now, split_screen).",
+    "3. Only for 4.5-6.0 s: keep the one picture and add tier A/B events so no event-free gap exceeds the preset's enrich_gap_s.",
+    "4. Nothing available: narration_plate (always buildable). Never a black or empty slot, never a return to an earlier picture."
+  ]
+}

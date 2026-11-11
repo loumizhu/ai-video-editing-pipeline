@@ -1,0 +1,419 @@
+{
+  "format": "filmcraft.graphicsTemplate",
+  "version": 1,
+  "id": "user:house-keyword-pop",
+  "name": "House - keyword-pop",
+  "category": "Publora House Style",
+  "description": "documentary-default keyword-pop, native layers",
+  "author": "",
+  "license": "",
+  "tags": [],
+  "canvas": [
+    1920,
+    1080
+  ],
+  "duration": 868755888000,
+  "layers": [
+    {
+      "effect": "graphic_text",
+      "enabled": true,
+      "params": {
+        "align": {
+          "value": {
+            "Choice": 1
+          }
+        },
+        "anchor": {
+          "value": {
+            "Vec2": {
+              "x": 0.0,
+              "y": 0.0
+            }
+          }
+        },
+        "background": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "background_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "background_opacity": {
+          "value": {
+            "Float": 75.0
+          }
+        },
+        "background_radius": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "background_size": {
+          "value": {
+            "Float": 12.0
+          }
+        },
+        "baseline_shift": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "box_height": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "box_width": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "caps": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "faux_bold": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "faux_italic": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "fill": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "fill_color": {
+          "value": {
+            "Color": [
+              0.9529412,
+              0.92156863,
+              0.8666667,
+              1.0
+            ]
+          }
+        },
+        "fill_kind": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "font": {
+          "value": {
+            "Text": "DM Serif Display"
+          }
+        },
+        "font_style": {
+          "value": {
+            "Text": "Regular"
+          }
+        },
+        "gradient_angle": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "gradient_end": {
+          "value": {
+            "Color": [
+              0.15,
+              0.15,
+              0.15,
+              1.0
+            ]
+          }
+        },
+        "gradient_start": {
+          "value": {
+            "Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "kerning": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "leading": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "ligatures": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "name": {
+          "value": {
+            "Text": "Keyword"
+          }
+        },
+        "opacity": {
+          "value": {
+            "Float": 100.0
+          },
+          "keyframes": [
+            {
+              "time": 0,
+              "value": {
+                "Float": 0.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 74162088000,
+              "value": {
+                "Float": 100.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 762810048000,
+              "value": {
+                "Float": 100.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 868755887999,
+              "value": {
+                "Float": 0.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            }
+          ]
+        },
+        "position": {
+          "value": {
+            "Vec2": {
+              "x": 960.0,
+              "y": 540.0
+            }
+          }
+        },
+        "rotation": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "scale": {
+          "value": {
+            "Float": 100.0
+          },
+          "keyframes": [
+            {
+              "time": 0,
+              "value": {
+                "Float": 30.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 127135008000,
+              "value": {
+                "Float": 100.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 762810048000,
+              "value": {
+                "Float": 100.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 868755887999,
+              "value": {
+                "Float": 85.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            }
+          ]
+        },
+        "scale_width": {
+          "value": {
+            "Float": 100.0
+          }
+        },
+        "shadow": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "shadow_angle": {
+          "value": {
+            "Float": 120.0
+          }
+        },
+        "shadow_blur": {
+          "value": {
+            "Float": 40.0
+          }
+        },
+        "shadow_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "shadow_distance": {
+          "value": {
+            "Float": 3.0
+          }
+        },
+        "shadow_opacity": {
+          "value": {
+            "Float": 90.0
+          }
+        },
+        "shadow_size": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "size": {
+          "value": {
+            "Float": 130.0
+          }
+        },
+        "strikethrough": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "stroke": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "stroke2": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "stroke2_color": {
+          "value": {
+            "Color": [
+              1.0,
+              0.85,
+              0.2,
+              1.0
+            ]
+          }
+        },
+        "stroke2_type": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "stroke2_width": {
+          "value": {
+            "Float": 10.0
+          }
+        },
+        "stroke_color": {
+          "value": {
+            "Color": [
+              0.05882353,
+              0.07058824,
+              0.09411765,
+              1.0
+            ]
+          }
+        },
+        "stroke_type": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "stroke_width": {
+          "value": {
+            "Float": 5.0
+          }
+        },
+        "text": {
+          "value": {
+            "Text": "NO."
+          }
+        },
+        "tracking": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "underline": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "uniform_scale": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "vertical": {
+          "value": {
+            "Bool": false
+          }
+        }
+      },
+      "layer": {
+        "uid": 1
+      }
+    }
+  ],
+  "graphic": {
+    "intro": 152409600000,
+    "outro": 114307200000,
+    "designIn": 0,
+    "designDuration": 868755888000
+  },
+  "controls": [
+    {
+      "id": "text1",
+      "name": "Keyword",
+      "kind": "text",
+      "layer": 1,
+      "param": "text"
+    }
+  ]
+}

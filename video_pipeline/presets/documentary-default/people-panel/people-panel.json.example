@@ -1,0 +1,12 @@
+{
+  "Title": "Two films, one Danny",
+  "Panels": [
+    {
+      "Image": "<abs path>.png",
+      "Name": "Stanley Kubrick",
+      "Role": "Directed The Shining, 1980",
+      "FX": 700,
+      "FY": 760
+    }
+  ]
+}

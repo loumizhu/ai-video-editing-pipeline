@@ -1,0 +1,5 @@
+Natural Earth Vector Data (Public Domain)
+Source: Natural Earth (https://www.naturalearthdata.com / https://github.com/nvkelso/natural-earth-vector)
+License: Public Domain. All versions of Natural Earth vector and raster data are in the public domain.
+You may use the maps in any manner, including modifying the content and design, electronic dissemination,
+and for commercial purposes. Attribution is appreciated: 'Made with Natural Earth'.

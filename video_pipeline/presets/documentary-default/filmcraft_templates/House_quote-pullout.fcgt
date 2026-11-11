@@ -1,0 +1,724 @@
+{
+  "format": "filmcraft.graphicsTemplate",
+  "version": 1,
+  "id": "user:house-quote-pullout",
+  "name": "House - quote-pullout",
+  "category": "Publora House Style",
+  "description": "documentary-default quote-pullout, native layers",
+  "author": "",
+  "license": "",
+  "tags": [],
+  "canvas": [
+    1920,
+    1080
+  ],
+  "duration": 1578593016000,
+  "layers": [
+    {
+      "effect": "graphic_shape",
+      "enabled": true,
+      "params": {
+        "anchor": {
+          "value": {
+            "Vec2": {
+              "x": 0.0,
+              "y": 0.0
+            }
+          }
+        },
+        "background": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "background_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "background_opacity": {
+          "value": {
+            "Float": 75.0
+          }
+        },
+        "background_radius": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "background_size": {
+          "value": {
+            "Float": 12.0
+          }
+        },
+        "corner_radius": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "fill": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "fill_color": {
+          "value": {
+            "Color": [
+              0.05882353,
+              0.07058824,
+              0.09411765,
+              1.0
+            ]
+          }
+        },
+        "fill_kind": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "gradient_angle": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "gradient_end": {
+          "value": {
+            "Color": [
+              0.15,
+              0.15,
+              0.15,
+              1.0
+            ]
+          }
+        },
+        "gradient_start": {
+          "value": {
+            "Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "name": {
+          "value": {
+            "Text": "Plate"
+          }
+        },
+        "opacity": {
+          "value": {
+            "Float": 82.0
+          },
+          "keyframes": [
+            {
+              "time": 0,
+              "value": {
+                "Float": 0.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 105945840000,
+              "value": {
+                "Float": 82.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 1493836344000,
+              "value": {
+                "Float": 82.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 1578593015999,
+              "value": {
+                "Float": 0.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            }
+          ]
+        },
+        "points": {
+          "value": {
+            "Curve": []
+          }
+        },
+        "position": {
+          "value": {
+            "Vec2": {
+              "x": 960.0,
+              "y": 590.0
+            }
+          }
+        },
+        "rotation": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "scale": {
+          "value": {
+            "Float": 100.0
+          }
+        },
+        "scale_width": {
+          "value": {
+            "Float": 100.0
+          }
+        },
+        "shadow": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "shadow_angle": {
+          "value": {
+            "Float": 135.0
+          }
+        },
+        "shadow_blur": {
+          "value": {
+            "Float": 40.0
+          }
+        },
+        "shadow_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "shadow_distance": {
+          "value": {
+            "Float": 10.0
+          }
+        },
+        "shadow_opacity": {
+          "value": {
+            "Float": 75.0
+          }
+        },
+        "shadow_size": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "shape": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "sides": {
+          "value": {
+            "Float": 6.0
+          }
+        },
+        "size": {
+          "value": {
+            "Vec2": {
+              "x": 1240.0,
+              "y": 512.0
+            }
+          }
+        },
+        "stroke": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "stroke2": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "stroke2_color": {
+          "value": {
+            "Color": [
+              1.0,
+              0.85,
+              0.2,
+              1.0
+            ]
+          }
+        },
+        "stroke2_type": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "stroke2_width": {
+          "value": {
+            "Float": 10.0
+          }
+        },
+        "stroke_color": {
+          "value": {
+            "Color": [
+              0.83137256,
+              0.6862745,
+              0.21568628,
+              1.0
+            ]
+          }
+        },
+        "stroke_type": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "stroke_width": {
+          "value": {
+            "Float": 2.0
+          }
+        },
+        "uniform_scale": {
+          "value": {
+            "Bool": true
+          }
+        }
+      },
+      "layer": {
+        "uid": 2,
+        "pin": {
+          "to": {
+            "layer": 1
+          },
+          "left": true,
+          "top": true,
+          "right": true,
+          "bottom": true,
+          "offsets": [
+            -70.0,
+            -46.0,
+            70.0,
+            46.0
+          ]
+        }
+      }
+    },
+    {
+      "effect": "graphic_text",
+      "enabled": true,
+      "params": {
+        "align": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "anchor": {
+          "value": {
+            "Vec2": {
+              "x": 0.0,
+              "y": 0.0
+            }
+          }
+        },
+        "background": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "background_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "background_opacity": {
+          "value": {
+            "Float": 75.0
+          }
+        },
+        "background_radius": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "background_size": {
+          "value": {
+            "Float": 12.0
+          }
+        },
+        "baseline_shift": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "box_height": {
+          "value": {
+            "Float": 420.0
+          }
+        },
+        "box_width": {
+          "value": {
+            "Float": 1100.0
+          }
+        },
+        "caps": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "faux_bold": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "faux_italic": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "fill": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "fill_color": {
+          "value": {
+            "Color": [
+              0.9529412,
+              0.92156863,
+              0.8666667,
+              1.0
+            ]
+          }
+        },
+        "fill_kind": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "font": {
+          "value": {
+            "Text": "Spectral"
+          }
+        },
+        "font_style": {
+          "value": {
+            "Text": "SemiBold"
+          }
+        },
+        "gradient_angle": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "gradient_end": {
+          "value": {
+            "Color": [
+              0.15,
+              0.15,
+              0.15,
+              1.0
+            ]
+          }
+        },
+        "gradient_start": {
+          "value": {
+            "Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "kerning": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "leading": {
+          "value": {
+            "Float": 14.0
+          }
+        },
+        "ligatures": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "name": {
+          "value": {
+            "Text": "Quote + attribution"
+          }
+        },
+        "opacity": {
+          "value": {
+            "Float": 100.0
+          },
+          "keyframes": [
+            {
+              "time": 0,
+              "value": {
+                "Float": 0.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 148324176000,
+              "value": {
+                "Float": 100.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 1493836344000,
+              "value": {
+                "Float": 100.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 1578593015999,
+              "value": {
+                "Float": 0.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            }
+          ]
+        },
+        "position": {
+          "value": {
+            "Vec2": {
+              "x": 410.0,
+              "y": 380.0
+            }
+          },
+          "keyframes": [
+            {
+              "time": 0,
+              "value": {
+                "Vec2": {
+                  "x": 410.0,
+                  "y": 392.0
+                }
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 180107928000,
+              "value": {
+                "Vec2": {
+                  "x": 410.0,
+                  "y": 380.0
+                }
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            }
+          ]
+        },
+        "rotation": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "scale": {
+          "value": {
+            "Float": 100.0
+          }
+        },
+        "scale_width": {
+          "value": {
+            "Float": 100.0
+          }
+        },
+        "shadow": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "shadow_angle": {
+          "value": {
+            "Float": 120.0
+          }
+        },
+        "shadow_blur": {
+          "value": {
+            "Float": 18.0
+          }
+        },
+        "shadow_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "shadow_distance": {
+          "value": {
+            "Float": 3.0
+          }
+        },
+        "shadow_opacity": {
+          "value": {
+            "Float": 55.0
+          }
+        },
+        "shadow_size": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "size": {
+          "value": {
+            "Float": 46.0
+          }
+        },
+        "strikethrough": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "stroke": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "stroke2": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "stroke2_color": {
+          "value": {
+            "Color": [
+              1.0,
+              0.85,
+              0.2,
+              1.0
+            ]
+          }
+        },
+        "stroke2_type": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "stroke2_width": {
+          "value": {
+            "Float": 10.0
+          }
+        },
+        "stroke_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "stroke_type": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "stroke_width": {
+          "value": {
+            "Float": 4.0
+          }
+        },
+        "text": {
+          "value": {
+            "Text": "There were basically about four fat kids in town, so every time there was a fat kid role you saw the same people at the audition.\n— JEFF COHEN"
+          }
+        },
+        "tracking": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "underline": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "uniform_scale": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "vertical": {
+          "value": {
+            "Bool": false
+          }
+        }
+      },
+      "layer": {
+        "uid": 1,
+        "runs": [
+          {
+            "start": 130,
+            "end": 142,
+            "font": "Barlow Condensed",
+            "fontStyle": "SemiBold",
+            "size": 40.0,
+            "fill": [
+              1.0,
+              0.9098039,
+              0.72156864,
+              1.0
+            ],
+            "tracking": 120.0
+          }
+        ]
+      }
+    }
+  ],
+  "graphic": {
+    "intro": 254016000000,
+    "outro": 127008000000,
+    "designIn": 0,
+    "designDuration": 1578593016000
+  },
+  "controls": [
+    {
+      "id": "text1",
+      "name": "Quote + attribution",
+      "kind": "text",
+      "layer": 1,
+      "param": "text"
+    }
+  ]
+}

@@ -1,0 +1,257 @@
+{
+  "schema": "pipeline.pacing/1",
+  "revision": "2026-11-09",
+  "doc": "PACING_AND_ENRICHMENT.md",
+  "default_preset": "documentary_standard",
+  "still_policy": {
+    "definition": "A still run is the uninterrupted on-screen time of one still image, or of several stills of the same asset_group / near-duplicate pictures, ended only by a distinct shot (different picture, footage, or full-frame plate). Ken Burns, crop changes and overlays do NOT reset it.",
+    "absolute_hard_max_s": 8.0,
+    "reading_plate_hard_max_s": 8.0,
+    "recompose_min_area_change": 0.35,
+    "reuse": "A still is shown once per video and never A-B-A (owner rule 2026-11-08). Fix long holds with a NEW distinct shot, never by returning to an earlier picture.",
+    "min_break_s": 1.0,
+    "min_break_note": "A video clip or plate shorter than this does not end a still run (no dummy-card resets)."
+  },
+  "intensity_scale": {
+    "_comment": "shot_scale stretches or shrinks the TARGET shot length for a beat's intensity (1..5). cap_scale only ever TIGHTENS the still caps (never relaxes them). cap_floor per preset stops the tightening from producing caps shorter than a sentence can be illustrated.",
+    "1": {
+      "shot_scale": 1.25,
+      "cap_scale": 1.0
+    },
+    "2": {
+      "shot_scale": 1.1,
+      "cap_scale": 1.0
+    },
+    "3": {
+      "shot_scale": 1.0,
+      "cap_scale": 1.0
+    },
+    "4": {
+      "shot_scale": 0.85,
+      "cap_scale": 0.85
+    },
+    "5": {
+      "shot_scale": 0.7,
+      "cap_scale": 0.7
+    }
+  },
+  "presets": {
+    "slow_reflective": {
+      "label": "Slow and reflective",
+      "use_for": "Grief, reckoning, quiet epilogues, memorial / tribute tone, long contemplative chapters.",
+      "shot_s": [
+        4.5,
+        6.5
+      ],
+      "card_s": [
+        5.5,
+        7.0
+      ],
+      "still_soft_max_s": 6.5,
+      "still_hard_max_s": 8.0,
+      "enrich_gap_s": 4.5,
+      "motion_intensity": [
+        1,
+        2
+      ],
+      "hard_cut_share_min": 0.55,
+      "max_dynamic_transitions_per_10min": 14,
+      "transition_style": "Hard cuts plus soft 0.5-0.7 s dissolves on shifts; dip to black only for chapter closes.",
+      "pattern_interrupt_every_s": [
+        75,
+        110
+      ],
+      "sfx_density": "sparse: room tone, single soft hits; no whoosh stacks",
+      "music": "Thin sustained bed, ducked 2 dB deeper than default under grief beats; no risers.",
+      "grade": "Colour script (COLOR_SCRIPT.md): pair with soft, lifted phase looks (contrast <= 0, fade or blacks lift allowed). Direction comes from the story, not from this preset.",
+      "cap_floor": {
+        "soft": 4.5,
+        "hard": 6.0,
+        "gap": 3.2
+      }
+    },
+    "documentary_standard": {
+      "label": "Documentary standard",
+      "use_for": "Default for narrated historical / biographical essays.",
+      "shot_s": [
+        3.5,
+        4.5
+      ],
+      "card_s": [
+        5.0,
+        6.0
+      ],
+      "still_soft_max_s": 4.5,
+      "still_hard_max_s": 6.0,
+      "enrich_gap_s": 3.5,
+      "motion_intensity": [
+        1,
+        3
+      ],
+      "hard_cut_share_min": 0.85,
+      "max_dynamic_transitions_per_10min": 10,
+      "transition_style": "Hard cut by default; 0.5 s dissolve on time jumps; dip to black on chapter change; whip/push only on revelations.",
+      "pattern_interrupt_every_s": [
+        45,
+        60
+      ],
+      "sfx_density": "moderate: one accent per graphic or transition, never two stacked",
+      "music": "Bed -24 dB under speech (-28 under soundbites); swells only at chapter turns.",
+      "grade": "Colour script (COLOR_SCRIPT.md): one look per phase, 4-8 phases, subtle.",
+      "cap_floor": {
+        "soft": 3.0,
+        "hard": 4.0,
+        "gap": 2.4
+      }
+    },
+    "tense_fast": {
+      "label": "Tense, fast-moving",
+      "use_for": "Hooks, cold opens, escalations, investigation turns, countdown / chase beats.",
+      "shot_s": [
+        2.0,
+        3.5
+      ],
+      "card_s": [
+        3.5,
+        5.0
+      ],
+      "still_soft_max_s": 3.5,
+      "still_hard_max_s": 4.5,
+      "enrich_gap_s": 2.5,
+      "motion_intensity": [
+        2,
+        5
+      ],
+      "hard_cut_share_min": 0.92,
+      "max_dynamic_transitions_per_10min": 8,
+      "transition_style": "Hard cuts only; one whip pan or punch-in at the peak; no dissolves.",
+      "pattern_interrupt_every_s": [
+        25,
+        40
+      ],
+      "sfx_density": "dense but varied: hits on cuts at intensity 4-5, risers into reveals",
+      "music": "Bed rises toward the beat peak; duck depth unchanged so speech stays clear.",
+      "grade": "Colour script (COLOR_SCRIPT.md): pair with firmer phase looks (contrast >= 0, saturation <= 0, blacks <= 0). Direction comes from the story, not from this preset.",
+      "cap_floor": {
+        "soft": 2.5,
+        "hard": 3.2,
+        "gap": 1.8
+      }
+    },
+    "shorts_vertical": {
+      "label": "Shorts / Reels (9:16)",
+      "use_for": "Vertical derivatives. Every shot is re-cropped for 9:16, never just trimmed (see DERIVATIVES.md).",
+      "shot_s": [
+        1.5,
+        3.0
+      ],
+      "card_s": [
+        2.5,
+        3.5
+      ],
+      "still_soft_max_s": 3.0,
+      "still_hard_max_s": 4.0,
+      "enrich_gap_s": 2.0,
+      "motion_intensity": [
+        2,
+        5
+      ],
+      "hard_cut_share_min": 0.9,
+      "max_dynamic_transitions_per_10min": 8,
+      "transition_style": "Hard cuts, punch-ins; kinetic keyword on every second shot.",
+      "pattern_interrupt_every_s": [
+        8,
+        15
+      ],
+      "sfx_density": "dense, short",
+      "music": "Bed forward, -20 dB under speech.",
+      "grade": "Same phase looks as the parent video (color_assign.json).",
+      "cap_floor": {
+        "soft": 2.2,
+        "hard": 3.0,
+        "gap": 1.5
+      }
+    }
+  },
+  "emotions": {
+    "_comment": "Beat emotions (core four from the editing tips plus 'neutral' for plain exposition). Rated by the beat-map agent (AI), mapped to parameters by code. No AI writes timecodes.",
+    "calm": {
+      "motions": [
+        "drift_left",
+        "drift_right",
+        "push_slow",
+        "pan_wide"
+      ],
+      "avoid_motions": [
+        "punch_in",
+        "handheld_micro"
+      ],
+      "transition": "hard cut or soft dissolve",
+      "music": "steady bed, no riser",
+      "sfx": "none or room tone",
+      "look_bias": "removed 2026-11-09: colour direction comes from color_script.json story_logic, never from the emotion"
+    },
+    "tension": {
+      "motions": [
+        "push_in",
+        "detail_crop",
+        "handheld_micro",
+        "reveal"
+      ],
+      "avoid_motions": [
+        "drift_left",
+        "drift_right"
+      ],
+      "transition": "hard cut; whip only at the peak",
+      "music": "bed rises 2-4 dB over the beat, low riser into the reveal",
+      "sfx": "sub hit or tick on key words",
+      "look_bias": "removed 2026-11-09: colour direction comes from color_script.json story_logic, never from the emotion"
+    },
+    "grief": {
+      "motions": [
+        "pull_back",
+        "drift_left",
+        "drift_right",
+        "push_slow"
+      ],
+      "avoid_motions": [
+        "punch_in",
+        "handheld_micro",
+        "detail_crop"
+      ],
+      "transition": "slow dissolve; dip to black on release",
+      "music": "thin sustained pad, duck 2 dB deeper",
+      "sfx": "silence preferred; single soft hit at most",
+      "look_bias": "removed 2026-11-09: colour direction comes from color_script.json story_logic, never from the emotion"
+    },
+    "joy": {
+      "motions": [
+        "push_in",
+        "pan_wide",
+        "reveal",
+        "drift_right"
+      ],
+      "avoid_motions": [
+        "handheld_micro"
+      ],
+      "transition": "hard cut; light-leak sweep on a celebratory turn",
+      "music": "brighter bed, lift 1-2 dB",
+      "sfx": "soft shimmer / light whoosh",
+      "look_bias": "removed 2026-11-09: colour direction comes from color_script.json story_logic, never from the emotion"
+    },
+    "neutral": {
+      "motions": [
+        "push_slow",
+        "drift_left",
+        "drift_right",
+        "pan_wide",
+        "pull_back"
+      ],
+      "avoid_motions": [],
+      "transition": "hard cut",
+      "music": "bed unchanged",
+      "sfx": "per graphic only",
+      "look_bias": "removed 2026-11-09: colour direction comes from color_script.json story_logic, never from the emotion"
+    }
+  }
+}

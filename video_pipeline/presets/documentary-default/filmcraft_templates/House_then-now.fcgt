@@ -1,0 +1,2175 @@
+{
+  "format": "filmcraft.graphicsTemplate",
+  "version": 1,
+  "id": "user:house-then-now",
+  "name": "House - then-now",
+  "category": "Publora House Style",
+  "description": "documentary-default then-now, native layers",
+  "author": "",
+  "license": "",
+  "tags": [],
+  "canvas": [
+    1920,
+    1080
+  ],
+  "duration": 1557403848000,
+  "layers": [
+    {
+      "effect": "graphic_shape",
+      "enabled": true,
+      "params": {
+        "anchor": {
+          "value": {
+            "Vec2": {
+              "x": 0.0,
+              "y": 0.0
+            }
+          }
+        },
+        "background": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "background_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "background_opacity": {
+          "value": {
+            "Float": 75.0
+          }
+        },
+        "background_radius": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "background_size": {
+          "value": {
+            "Float": 12.0
+          }
+        },
+        "corner_radius": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "fill": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "fill_color": {
+          "value": {
+            "Color": [
+              0.05882353,
+              0.07058824,
+              0.09411765,
+              1.0
+            ]
+          }
+        },
+        "fill_kind": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "gradient_angle": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "gradient_end": {
+          "value": {
+            "Color": [
+              0.15,
+              0.15,
+              0.15,
+              1.0
+            ]
+          }
+        },
+        "gradient_start": {
+          "value": {
+            "Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "name": {
+          "value": {
+            "Text": "Plate"
+          }
+        },
+        "opacity": {
+          "value": {
+            "Float": 82.0
+          },
+          "keyframes": [
+            {
+              "time": 0,
+              "value": {
+                "Float": 0.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 105945840000,
+              "value": {
+                "Float": 82.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 1472647176000,
+              "value": {
+                "Float": 82.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 1557403847999,
+              "value": {
+                "Float": 0.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            }
+          ]
+        },
+        "points": {
+          "value": {
+            "Curve": []
+          }
+        },
+        "position": {
+          "value": {
+            "Vec2": {
+              "x": 960.0,
+              "y": 556.0699996948242
+            }
+          }
+        },
+        "rotation": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "scale": {
+          "value": {
+            "Float": 100.0
+          }
+        },
+        "scale_width": {
+          "value": {
+            "Float": 100.0
+          }
+        },
+        "shadow": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "shadow_angle": {
+          "value": {
+            "Float": 135.0
+          }
+        },
+        "shadow_blur": {
+          "value": {
+            "Float": 40.0
+          }
+        },
+        "shadow_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "shadow_distance": {
+          "value": {
+            "Float": 10.0
+          }
+        },
+        "shadow_opacity": {
+          "value": {
+            "Float": 75.0
+          }
+        },
+        "shadow_size": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "shape": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "sides": {
+          "value": {
+            "Float": 6.0
+          }
+        },
+        "size": {
+          "value": {
+            "Vec2": {
+              "x": 1018.8240966796876,
+              "y": 448.1399993896485
+            }
+          }
+        },
+        "stroke": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "stroke2": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "stroke2_color": {
+          "value": {
+            "Color": [
+              1.0,
+              0.85,
+              0.2,
+              1.0
+            ]
+          }
+        },
+        "stroke2_type": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "stroke2_width": {
+          "value": {
+            "Float": 10.0
+          }
+        },
+        "stroke_color": {
+          "value": {
+            "Color": [
+              0.83137256,
+              0.6862745,
+              0.21568628,
+              1.0
+            ]
+          }
+        },
+        "stroke_type": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "stroke_width": {
+          "value": {
+            "Float": 2.0
+          }
+        },
+        "uniform_scale": {
+          "value": {
+            "Bool": true
+          }
+        }
+      },
+      "layer": {
+        "uid": 5,
+        "pin": {
+          "to": {
+            "layer": 4
+          },
+          "left": true,
+          "top": true,
+          "right": true,
+          "bottom": true,
+          "offsets": [
+            -90.0,
+            -280.9760055541992,
+            90.0,
+            52.00000762939453
+          ]
+        }
+      }
+    },
+    {
+      "effect": "graphic_text",
+      "enabled": true,
+      "params": {
+        "align": {
+          "value": {
+            "Choice": 1
+          }
+        },
+        "anchor": {
+          "value": {
+            "Vec2": {
+              "x": 0.0,
+              "y": 0.0
+            }
+          }
+        },
+        "background": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "background_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "background_opacity": {
+          "value": {
+            "Float": 75.0
+          }
+        },
+        "background_radius": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "background_size": {
+          "value": {
+            "Float": 12.0
+          }
+        },
+        "baseline_shift": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "box_height": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "box_width": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "caps": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "faux_bold": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "faux_italic": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "fill": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "fill_color": {
+          "value": {
+            "Color": [
+              0.6039216,
+              0.627451,
+              0.65882355,
+              1.0
+            ]
+          }
+        },
+        "fill_kind": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "font": {
+          "value": {
+            "Text": "Barlow Condensed"
+          }
+        },
+        "font_style": {
+          "value": {
+            "Text": "SemiBold"
+          }
+        },
+        "gradient_angle": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "gradient_end": {
+          "value": {
+            "Color": [
+              0.15,
+              0.15,
+              0.15,
+              1.0
+            ]
+          }
+        },
+        "gradient_start": {
+          "value": {
+            "Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "kerning": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "leading": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "ligatures": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "name": {
+          "value": {
+            "Text": "Then label"
+          }
+        },
+        "opacity": {
+          "value": {
+            "Float": 100.0
+          },
+          "keyframes": [
+            {
+              "time": 0,
+              "value": {
+                "Float": 0.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 116540424000,
+              "value": {
+                "Float": 100.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 1472647176000,
+              "value": {
+                "Float": 100.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 1557403847999,
+              "value": {
+                "Float": 0.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            }
+          ]
+        },
+        "position": {
+          "value": {
+            "Vec2": {
+              "x": 960.0,
+              "y": 420.0
+            }
+          },
+          "keyframes": [
+            {
+              "time": 0,
+              "value": {
+                "Vec2": {
+                  "x": 960.0,
+                  "y": 430.0
+                }
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 137729592000,
+              "value": {
+                "Vec2": {
+                  "x": 960.0,
+                  "y": 420.0
+                }
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            }
+          ]
+        },
+        "rotation": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "scale": {
+          "value": {
+            "Float": 100.0
+          }
+        },
+        "scale_width": {
+          "value": {
+            "Float": 100.0
+          }
+        },
+        "shadow": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "shadow_angle": {
+          "value": {
+            "Float": 120.0
+          }
+        },
+        "shadow_blur": {
+          "value": {
+            "Float": 18.0
+          }
+        },
+        "shadow_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "shadow_distance": {
+          "value": {
+            "Float": 3.0
+          }
+        },
+        "shadow_opacity": {
+          "value": {
+            "Float": 55.0
+          }
+        },
+        "shadow_size": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "size": {
+          "value": {
+            "Float": 36.0
+          }
+        },
+        "strikethrough": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "stroke": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "stroke2": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "stroke2_color": {
+          "value": {
+            "Color": [
+              1.0,
+              0.85,
+              0.2,
+              1.0
+            ]
+          }
+        },
+        "stroke2_type": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "stroke2_width": {
+          "value": {
+            "Float": 10.0
+          }
+        },
+        "stroke_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "stroke_type": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "stroke_width": {
+          "value": {
+            "Float": 4.0
+          }
+        },
+        "text": {
+          "value": {
+            "Text": "ON SCREEN | 1985"
+          }
+        },
+        "tracking": {
+          "value": {
+            "Float": 160.0
+          }
+        },
+        "underline": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "uniform_scale": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "vertical": {
+          "value": {
+            "Bool": false
+          }
+        }
+      },
+      "layer": {
+        "uid": 1
+      }
+    },
+    {
+      "effect": "graphic_text",
+      "enabled": true,
+      "params": {
+        "align": {
+          "value": {
+            "Choice": 1
+          }
+        },
+        "anchor": {
+          "value": {
+            "Vec2": {
+              "x": 0.0,
+              "y": 0.0
+            }
+          }
+        },
+        "background": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "background_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "background_opacity": {
+          "value": {
+            "Float": 75.0
+          }
+        },
+        "background_radius": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "background_size": {
+          "value": {
+            "Float": 12.0
+          }
+        },
+        "baseline_shift": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "box_height": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "box_width": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "caps": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "faux_bold": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "faux_italic": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "fill": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "fill_color": {
+          "value": {
+            "Color": [
+              0.9529412,
+              0.92156863,
+              0.8666667,
+              1.0
+            ]
+          }
+        },
+        "fill_kind": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "font": {
+          "value": {
+            "Text": "DM Serif Display"
+          }
+        },
+        "font_style": {
+          "value": {
+            "Text": "Regular"
+          }
+        },
+        "gradient_angle": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "gradient_end": {
+          "value": {
+            "Color": [
+              0.15,
+              0.15,
+              0.15,
+              1.0
+            ]
+          }
+        },
+        "gradient_start": {
+          "value": {
+            "Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "kerning": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "leading": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "ligatures": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "name": {
+          "value": {
+            "Text": "Then"
+          }
+        },
+        "opacity": {
+          "value": {
+            "Float": 100.0
+          },
+          "keyframes": [
+            {
+              "time": 0,
+              "value": {
+                "Float": 0.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 116540424000,
+              "value": {
+                "Float": 100.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 307242936000,
+              "value": {
+                "Float": 100.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 381405024000,
+              "value": {
+                "Float": 62.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 1472647176000,
+              "value": {
+                "Float": 100.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 1557403847999,
+              "value": {
+                "Float": 0.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            }
+          ]
+        },
+        "position": {
+          "value": {
+            "Vec2": {
+              "x": 960.0,
+              "y": 510.0
+            }
+          },
+          "keyframes": [
+            {
+              "time": 0,
+              "value": {
+                "Vec2": {
+                  "x": 960.0,
+                  "y": 520.0
+                }
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 137729592000,
+              "value": {
+                "Vec2": {
+                  "x": 960.0,
+                  "y": 510.0
+                }
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            }
+          ]
+        },
+        "rotation": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "scale": {
+          "value": {
+            "Float": 100.0
+          }
+        },
+        "scale_width": {
+          "value": {
+            "Float": 100.0
+          }
+        },
+        "shadow": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "shadow_angle": {
+          "value": {
+            "Float": 120.0
+          }
+        },
+        "shadow_blur": {
+          "value": {
+            "Float": 18.0
+          }
+        },
+        "shadow_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "shadow_distance": {
+          "value": {
+            "Float": 3.0
+          }
+        },
+        "shadow_opacity": {
+          "value": {
+            "Float": 55.0
+          }
+        },
+        "shadow_size": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "size": {
+          "value": {
+            "Float": 84.0
+          }
+        },
+        "strikethrough": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "stroke": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "stroke2": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "stroke2_color": {
+          "value": {
+            "Color": [
+              1.0,
+              0.85,
+              0.2,
+              1.0
+            ]
+          }
+        },
+        "stroke2_type": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "stroke2_width": {
+          "value": {
+            "Float": 10.0
+          }
+        },
+        "stroke_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "stroke_type": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "stroke_width": {
+          "value": {
+            "Float": 4.0
+          }
+        },
+        "text": {
+          "value": {
+            "Text": "Chunk"
+          }
+        },
+        "tracking": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "underline": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "uniform_scale": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "vertical": {
+          "value": {
+            "Bool": false
+          }
+        }
+      },
+      "layer": {
+        "uid": 2
+      }
+    },
+    {
+      "effect": "graphic_text",
+      "enabled": true,
+      "params": {
+        "align": {
+          "value": {
+            "Choice": 1
+          }
+        },
+        "anchor": {
+          "value": {
+            "Vec2": {
+              "x": 0.0,
+              "y": 0.0
+            }
+          }
+        },
+        "background": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "background_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "background_opacity": {
+          "value": {
+            "Float": 75.0
+          }
+        },
+        "background_radius": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "background_size": {
+          "value": {
+            "Float": 12.0
+          }
+        },
+        "baseline_shift": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "box_height": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "box_width": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "caps": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "faux_bold": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "faux_italic": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "fill": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "fill_color": {
+          "value": {
+            "Color": [
+              1.0,
+              0.9098039,
+              0.72156864,
+              1.0
+            ]
+          }
+        },
+        "fill_kind": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "font": {
+          "value": {
+            "Text": "Barlow Condensed"
+          }
+        },
+        "font_style": {
+          "value": {
+            "Text": "SemiBold"
+          }
+        },
+        "gradient_angle": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "gradient_end": {
+          "value": {
+            "Color": [
+              0.15,
+              0.15,
+              0.15,
+              1.0
+            ]
+          }
+        },
+        "gradient_start": {
+          "value": {
+            "Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "kerning": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "leading": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "ligatures": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "name": {
+          "value": {
+            "Text": "Now label"
+          }
+        },
+        "opacity": {
+          "value": {
+            "Float": 100.0
+          },
+          "keyframes": [
+            {
+              "time": 391999608000,
+              "value": {
+                "Float": 0.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 508540032000,
+              "value": {
+                "Float": 100.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 1472647176000,
+              "value": {
+                "Float": 100.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 1557403847999,
+              "value": {
+                "Float": 0.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            }
+          ]
+        },
+        "position": {
+          "value": {
+            "Vec2": {
+              "x": 960.0,
+              "y": 610.0
+            }
+          },
+          "keyframes": [
+            {
+              "time": 391999608000,
+              "value": {
+                "Vec2": {
+                  "x": 960.0,
+                  "y": 620.0
+                }
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 529729200000,
+              "value": {
+                "Vec2": {
+                  "x": 960.0,
+                  "y": 610.0
+                }
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            }
+          ]
+        },
+        "rotation": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "scale": {
+          "value": {
+            "Float": 100.0
+          }
+        },
+        "scale_width": {
+          "value": {
+            "Float": 100.0
+          }
+        },
+        "shadow": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "shadow_angle": {
+          "value": {
+            "Float": 120.0
+          }
+        },
+        "shadow_blur": {
+          "value": {
+            "Float": 18.0
+          }
+        },
+        "shadow_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "shadow_distance": {
+          "value": {
+            "Float": 3.0
+          }
+        },
+        "shadow_opacity": {
+          "value": {
+            "Float": 55.0
+          }
+        },
+        "shadow_size": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "size": {
+          "value": {
+            "Float": 36.0
+          }
+        },
+        "strikethrough": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "stroke": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "stroke2": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "stroke2_color": {
+          "value": {
+            "Color": [
+              1.0,
+              0.85,
+              0.2,
+              1.0
+            ]
+          }
+        },
+        "stroke2_type": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "stroke2_width": {
+          "value": {
+            "Float": 10.0
+          }
+        },
+        "stroke_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "stroke_type": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "stroke_width": {
+          "value": {
+            "Float": 4.0
+          }
+        },
+        "text": {
+          "value": {
+            "Text": "IN REAL LIFE"
+          }
+        },
+        "tracking": {
+          "value": {
+            "Float": 160.0
+          }
+        },
+        "underline": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "uniform_scale": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "vertical": {
+          "value": {
+            "Bool": false
+          }
+        }
+      },
+      "layer": {
+        "uid": 3
+      }
+    },
+    {
+      "effect": "graphic_text",
+      "enabled": true,
+      "params": {
+        "align": {
+          "value": {
+            "Choice": 1
+          }
+        },
+        "anchor": {
+          "value": {
+            "Vec2": {
+              "x": 0.0,
+              "y": 0.0
+            }
+          }
+        },
+        "background": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "background_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "background_opacity": {
+          "value": {
+            "Float": 75.0
+          }
+        },
+        "background_radius": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "background_size": {
+          "value": {
+            "Float": 12.0
+          }
+        },
+        "baseline_shift": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "box_height": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "box_width": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "caps": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "faux_bold": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "faux_italic": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "fill": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "fill_color": {
+          "value": {
+            "Color": [
+              0.9529412,
+              0.92156863,
+              0.8666667,
+              1.0
+            ]
+          }
+        },
+        "fill_kind": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "font": {
+          "value": {
+            "Text": "DM Serif Display"
+          }
+        },
+        "font_style": {
+          "value": {
+            "Text": "Regular"
+          }
+        },
+        "gradient_angle": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "gradient_end": {
+          "value": {
+            "Color": [
+              0.15,
+              0.15,
+              0.15,
+              1.0
+            ]
+          }
+        },
+        "gradient_start": {
+          "value": {
+            "Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "kerning": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "leading": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "ligatures": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "name": {
+          "value": {
+            "Text": "Now"
+          }
+        },
+        "opacity": {
+          "value": {
+            "Float": 100.0
+          },
+          "keyframes": [
+            {
+              "time": 434377944000,
+              "value": {
+                "Float": 0.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 550918368000,
+              "value": {
+                "Float": 100.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 1472647176000,
+              "value": {
+                "Float": 100.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 1557403847999,
+              "value": {
+                "Float": 0.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            }
+          ]
+        },
+        "position": {
+          "value": {
+            "Vec2": {
+              "x": 960.0,
+              "y": 700.0
+            }
+          },
+          "keyframes": [
+            {
+              "time": 434377944000,
+              "value": {
+                "Vec2": {
+                  "x": 960.0,
+                  "y": 710.0
+                }
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 572107536000,
+              "value": {
+                "Vec2": {
+                  "x": 960.0,
+                  "y": 700.0
+                }
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            }
+          ]
+        },
+        "rotation": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "scale": {
+          "value": {
+            "Float": 100.0
+          }
+        },
+        "scale_width": {
+          "value": {
+            "Float": 100.0
+          }
+        },
+        "shadow": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "shadow_angle": {
+          "value": {
+            "Float": 120.0
+          }
+        },
+        "shadow_blur": {
+          "value": {
+            "Float": 18.0
+          }
+        },
+        "shadow_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "shadow_distance": {
+          "value": {
+            "Float": 3.0
+          }
+        },
+        "shadow_opacity": {
+          "value": {
+            "Float": 55.0
+          }
+        },
+        "shadow_size": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "size": {
+          "value": {
+            "Float": 84.0
+          }
+        },
+        "strikethrough": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "stroke": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "stroke2": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "stroke2_color": {
+          "value": {
+            "Color": [
+              1.0,
+              0.85,
+              0.2,
+              1.0
+            ]
+          }
+        },
+        "stroke2_type": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "stroke2_width": {
+          "value": {
+            "Float": 10.0
+          }
+        },
+        "stroke_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "stroke_type": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "stroke_width": {
+          "value": {
+            "Float": 4.0
+          }
+        },
+        "text": {
+          "value": {
+            "Text": "Entertainment Lawyer"
+          }
+        },
+        "tracking": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "underline": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "uniform_scale": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "vertical": {
+          "value": {
+            "Bool": false
+          }
+        }
+      },
+      "layer": {
+        "uid": 4
+      }
+    },
+    {
+      "effect": "graphic_shape",
+      "enabled": true,
+      "params": {
+        "anchor": {
+          "value": {
+            "Vec2": {
+              "x": 0.0,
+              "y": 0.0
+            }
+          }
+        },
+        "background": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "background_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "background_opacity": {
+          "value": {
+            "Float": 75.0
+          }
+        },
+        "background_radius": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "background_size": {
+          "value": {
+            "Float": 12.0
+          }
+        },
+        "corner_radius": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "fill": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "fill_color": {
+          "value": {
+            "Color": [
+              0.7882353,
+              0.2784314,
+              0.23921569,
+              1.0
+            ]
+          }
+        },
+        "fill_kind": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "gradient_angle": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "gradient_end": {
+          "value": {
+            "Color": [
+              0.15,
+              0.15,
+              0.15,
+              1.0
+            ]
+          }
+        },
+        "gradient_start": {
+          "value": {
+            "Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "name": {
+          "value": {
+            "Text": "Strike"
+          }
+        },
+        "opacity": {
+          "value": {
+            "Float": 100.0
+          },
+          "keyframes": [
+            {
+              "time": 307242936000,
+              "value": {
+                "Float": 0.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 317837520000,
+              "value": {
+                "Float": 100.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 1472647176000,
+              "value": {
+                "Float": 100.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 1557403847999,
+              "value": {
+                "Float": 0.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            }
+          ]
+        },
+        "points": {
+          "value": {
+            "Curve": []
+          }
+        },
+        "position": {
+          "value": {
+            "Vec2": {
+              "x": 960.0,
+              "y": 488.55799865722656
+            }
+          }
+        },
+        "rotation": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "scale": {
+          "value": {
+            "Float": 100.0
+          }
+        },
+        "scale_width": {
+          "value": {
+            "Float": 100.0
+          },
+          "keyframes": [
+            {
+              "time": 307242936000,
+              "value": {
+                "Float": 0.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 402594192000,
+              "value": {
+                "Float": 100.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            }
+          ]
+        },
+        "shadow": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "shadow_angle": {
+          "value": {
+            "Float": 135.0
+          }
+        },
+        "shadow_blur": {
+          "value": {
+            "Float": 40.0
+          }
+        },
+        "shadow_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "shadow_distance": {
+          "value": {
+            "Float": 10.0
+          }
+        },
+        "shadow_opacity": {
+          "value": {
+            "Float": 75.0
+          }
+        },
+        "shadow_size": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "shape": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "sides": {
+          "value": {
+            "Float": 6.0
+          }
+        },
+        "size": {
+          "value": {
+            "Vec2": {
+              "x": 264.0199890136719,
+              "y": 6.0
+            }
+          }
+        },
+        "stroke": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "stroke2": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "stroke2_color": {
+          "value": {
+            "Color": [
+              1.0,
+              0.85,
+              0.2,
+              1.0
+            ]
+          }
+        },
+        "stroke2_type": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "stroke2_width": {
+          "value": {
+            "Float": 10.0
+          }
+        },
+        "stroke_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "stroke_type": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "stroke_width": {
+          "value": {
+            "Float": 4.0
+          }
+        },
+        "uniform_scale": {
+          "value": {
+            "Bool": true
+          }
+        }
+      },
+      "layer": {
+        "uid": 6
+      }
+    }
+  ],
+  "graphic": {
+    "intro": 609638400000,
+    "outro": 101606400000,
+    "designIn": 0,
+    "designDuration": 1557403848000
+  },
+  "controls": [
+    {
+      "id": "text1",
+      "name": "Then label",
+      "kind": "text",
+      "layer": 1,
+      "param": "text"
+    },
+    {
+      "id": "text2",
+      "name": "Then",
+      "kind": "text",
+      "layer": 2,
+      "param": "text"
+    },
+    {
+      "id": "text3",
+      "name": "Now label",
+      "kind": "text",
+      "layer": 3,
+      "param": "text"
+    },
+    {
+      "id": "text4",
+      "name": "Now",
+      "kind": "text",
+      "layer": 4,
+      "param": "text"
+    }
+  ]
+}

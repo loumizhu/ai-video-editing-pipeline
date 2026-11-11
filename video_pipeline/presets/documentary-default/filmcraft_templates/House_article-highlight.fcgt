@@ -1,0 +1,2399 @@
+{
+  "format": "filmcraft.graphicsTemplate",
+  "version": 1,
+  "id": "user:house-article-highlight",
+  "name": "House - article-highlight",
+  "category": "Publora House Style",
+  "description": "documentary-default article-highlight, native layers",
+  "author": "",
+  "license": "",
+  "tags": [],
+  "canvas": [
+    1920,
+    1080
+  ],
+  "duration": 3273726456000,
+  "layers": [
+    {
+      "effect": "graphic_shape",
+      "enabled": true,
+      "params": {
+        "anchor": {
+          "value": {
+            "Vec2": {
+              "x": 0.0,
+              "y": 0.0
+            }
+          }
+        },
+        "background": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "background_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "background_opacity": {
+          "value": {
+            "Float": 75.0
+          }
+        },
+        "background_radius": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "background_size": {
+          "value": {
+            "Float": 12.0
+          }
+        },
+        "corner_radius": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "fill": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "fill_color": {
+          "value": {
+            "Color": [
+              0.9529412,
+              0.92156863,
+              0.8666667,
+              1.0
+            ]
+          }
+        },
+        "fill_kind": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "gradient_angle": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "gradient_end": {
+          "value": {
+            "Color": [
+              0.15,
+              0.15,
+              0.15,
+              1.0
+            ]
+          }
+        },
+        "gradient_start": {
+          "value": {
+            "Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "name": {
+          "value": {
+            "Text": "Paper"
+          }
+        },
+        "opacity": {
+          "value": {
+            "Float": 100.0
+          },
+          "keyframes": [
+            {
+              "time": 0,
+              "value": {
+                "Float": 0.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 127135008000,
+              "value": {
+                "Float": 100.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 3188969784000,
+              "value": {
+                "Float": 100.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 3273726455999,
+              "value": {
+                "Float": 0.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            }
+          ]
+        },
+        "points": {
+          "value": {
+            "Curve": []
+          }
+        },
+        "position": {
+          "value": {
+            "Vec2": {
+              "x": 960.0,
+              "y": 540.0
+            }
+          },
+          "keyframes": [
+            {
+              "time": 0,
+              "value": {
+                "Vec2": {
+                  "x": 960.0,
+                  "y": 600.0
+                }
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 148324176000,
+              "value": {
+                "Vec2": {
+                  "x": 960.0,
+                  "y": 540.0
+                }
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            }
+          ]
+        },
+        "rotation": {
+          "value": {
+            "Float": -1.2
+          }
+        },
+        "scale": {
+          "value": {
+            "Float": 100.0
+          }
+        },
+        "scale_width": {
+          "value": {
+            "Float": 100.0
+          }
+        },
+        "shadow": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "shadow_angle": {
+          "value": {
+            "Float": 135.0
+          }
+        },
+        "shadow_blur": {
+          "value": {
+            "Float": 40.0
+          }
+        },
+        "shadow_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "shadow_distance": {
+          "value": {
+            "Float": 10.0
+          }
+        },
+        "shadow_opacity": {
+          "value": {
+            "Float": 60.0
+          }
+        },
+        "shadow_size": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "shape": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "sides": {
+          "value": {
+            "Float": 6.0
+          }
+        },
+        "size": {
+          "value": {
+            "Vec2": {
+              "x": 1180.0,
+              "y": 640.0
+            }
+          }
+        },
+        "stroke": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "stroke2": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "stroke2_color": {
+          "value": {
+            "Color": [
+              1.0,
+              0.85,
+              0.2,
+              1.0
+            ]
+          }
+        },
+        "stroke2_type": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "stroke2_width": {
+          "value": {
+            "Float": 10.0
+          }
+        },
+        "stroke_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "stroke_type": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "stroke_width": {
+          "value": {
+            "Float": 4.0
+          }
+        },
+        "uniform_scale": {
+          "value": {
+            "Bool": true
+          }
+        }
+      },
+      "layer": {
+        "uid": 1
+      }
+    },
+    {
+      "effect": "graphic_text",
+      "enabled": true,
+      "params": {
+        "align": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "anchor": {
+          "value": {
+            "Vec2": {
+              "x": 0.0,
+              "y": 0.0
+            }
+          }
+        },
+        "background": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "background_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "background_opacity": {
+          "value": {
+            "Float": 75.0
+          }
+        },
+        "background_radius": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "background_size": {
+          "value": {
+            "Float": 12.0
+          }
+        },
+        "baseline_shift": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "box_height": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "box_width": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "caps": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "faux_bold": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "faux_italic": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "fill": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "fill_color": {
+          "value": {
+            "Color": [
+              0.05882353,
+              0.07058824,
+              0.09411765,
+              1.0
+            ]
+          }
+        },
+        "fill_kind": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "font": {
+          "value": {
+            "Text": "DM Serif Display"
+          }
+        },
+        "font_style": {
+          "value": {
+            "Text": "Regular"
+          }
+        },
+        "gradient_angle": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "gradient_end": {
+          "value": {
+            "Color": [
+              0.15,
+              0.15,
+              0.15,
+              1.0
+            ]
+          }
+        },
+        "gradient_start": {
+          "value": {
+            "Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "kerning": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "leading": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "ligatures": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "name": {
+          "value": {
+            "Text": "Masthead"
+          }
+        },
+        "opacity": {
+          "value": {
+            "Float": 100.0
+          },
+          "keyframes": [
+            {
+              "time": 0,
+              "value": {
+                "Float": 0.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 127135008000,
+              "value": {
+                "Float": 100.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 3188969784000,
+              "value": {
+                "Float": 100.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 3273726455999,
+              "value": {
+                "Float": 0.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            }
+          ]
+        },
+        "position": {
+          "value": {
+            "Vec2": {
+              "x": 440.0,
+              "y": 330.0
+            }
+          }
+        },
+        "rotation": {
+          "value": {
+            "Float": -1.2
+          }
+        },
+        "scale": {
+          "value": {
+            "Float": 100.0
+          }
+        },
+        "scale_width": {
+          "value": {
+            "Float": 100.0
+          }
+        },
+        "shadow": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "shadow_angle": {
+          "value": {
+            "Float": 135.0
+          }
+        },
+        "shadow_blur": {
+          "value": {
+            "Float": 40.0
+          }
+        },
+        "shadow_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "shadow_distance": {
+          "value": {
+            "Float": 10.0
+          }
+        },
+        "shadow_opacity": {
+          "value": {
+            "Float": 75.0
+          }
+        },
+        "shadow_size": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "size": {
+          "value": {
+            "Float": 52.0
+          }
+        },
+        "strikethrough": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "stroke": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "stroke2": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "stroke2_color": {
+          "value": {
+            "Color": [
+              1.0,
+              0.85,
+              0.2,
+              1.0
+            ]
+          }
+        },
+        "stroke2_type": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "stroke2_width": {
+          "value": {
+            "Float": 10.0
+          }
+        },
+        "stroke_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "stroke_type": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "stroke_width": {
+          "value": {
+            "Float": 4.0
+          }
+        },
+        "text": {
+          "value": {
+            "Text": "American Veterinary Medical Association"
+          }
+        },
+        "tracking": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "underline": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "uniform_scale": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "vertical": {
+          "value": {
+            "Bool": false
+          }
+        }
+      },
+      "layer": {
+        "uid": 2
+      }
+    },
+    {
+      "effect": "graphic_text",
+      "enabled": true,
+      "params": {
+        "align": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "anchor": {
+          "value": {
+            "Vec2": {
+              "x": 0.0,
+              "y": 0.0
+            }
+          }
+        },
+        "background": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "background_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "background_opacity": {
+          "value": {
+            "Float": 75.0
+          }
+        },
+        "background_radius": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "background_size": {
+          "value": {
+            "Float": 12.0
+          }
+        },
+        "baseline_shift": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "box_height": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "box_width": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "caps": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "faux_bold": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "faux_italic": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "fill": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "fill_color": {
+          "value": {
+            "Color": [
+              0.3529412,
+              0.3764706,
+              0.41960785,
+              1.0
+            ]
+          }
+        },
+        "fill_kind": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "font": {
+          "value": {
+            "Text": "Barlow Condensed"
+          }
+        },
+        "font_style": {
+          "value": {
+            "Text": "SemiBold"
+          }
+        },
+        "gradient_angle": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "gradient_end": {
+          "value": {
+            "Color": [
+              0.15,
+              0.15,
+              0.15,
+              1.0
+            ]
+          }
+        },
+        "gradient_start": {
+          "value": {
+            "Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "kerning": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "leading": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "ligatures": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "name": {
+          "value": {
+            "Text": "Meta"
+          }
+        },
+        "opacity": {
+          "value": {
+            "Float": 100.0
+          },
+          "keyframes": [
+            {
+              "time": 0,
+              "value": {
+                "Float": 0.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 127135008000,
+              "value": {
+                "Float": 100.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 3188969784000,
+              "value": {
+                "Float": 100.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 3273726455999,
+              "value": {
+                "Float": 0.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            }
+          ]
+        },
+        "position": {
+          "value": {
+            "Vec2": {
+              "x": 442.0,
+              "y": 380.0
+            }
+          }
+        },
+        "rotation": {
+          "value": {
+            "Float": -1.2
+          }
+        },
+        "scale": {
+          "value": {
+            "Float": 100.0
+          }
+        },
+        "scale_width": {
+          "value": {
+            "Float": 100.0
+          }
+        },
+        "shadow": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "shadow_angle": {
+          "value": {
+            "Float": 135.0
+          }
+        },
+        "shadow_blur": {
+          "value": {
+            "Float": 40.0
+          }
+        },
+        "shadow_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "shadow_distance": {
+          "value": {
+            "Float": 10.0
+          }
+        },
+        "shadow_opacity": {
+          "value": {
+            "Float": 75.0
+          }
+        },
+        "shadow_size": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "size": {
+          "value": {
+            "Float": 30.0
+          }
+        },
+        "strikethrough": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "stroke": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "stroke2": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "stroke2_color": {
+          "value": {
+            "Color": [
+              1.0,
+              0.85,
+              0.2,
+              1.0
+            ]
+          }
+        },
+        "stroke2_type": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "stroke2_width": {
+          "value": {
+            "Float": 10.0
+          }
+        },
+        "stroke_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "stroke_type": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "stroke_width": {
+          "value": {
+            "Float": 4.0
+          }
+        },
+        "text": {
+          "value": {
+            "Text": "INTERVIEW | PETER OSTRUM, DVM"
+          }
+        },
+        "tracking": {
+          "value": {
+            "Float": 80.0
+          }
+        },
+        "underline": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "uniform_scale": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "vertical": {
+          "value": {
+            "Bool": false
+          }
+        }
+      },
+      "layer": {
+        "uid": 3
+      }
+    },
+    {
+      "effect": "graphic_shape",
+      "enabled": true,
+      "params": {
+        "anchor": {
+          "value": {
+            "Vec2": {
+              "x": 0.0,
+              "y": 0.0
+            }
+          }
+        },
+        "background": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "background_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "background_opacity": {
+          "value": {
+            "Float": 75.0
+          }
+        },
+        "background_radius": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "background_size": {
+          "value": {
+            "Float": 12.0
+          }
+        },
+        "corner_radius": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "fill": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "fill_color": {
+          "value": {
+            "Color": [
+              0.05882353,
+              0.07058824,
+              0.09411765,
+              1.0
+            ]
+          }
+        },
+        "fill_kind": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "gradient_angle": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "gradient_end": {
+          "value": {
+            "Color": [
+              0.15,
+              0.15,
+              0.15,
+              1.0
+            ]
+          }
+        },
+        "gradient_start": {
+          "value": {
+            "Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "name": {
+          "value": {
+            "Text": "Rule"
+          }
+        },
+        "opacity": {
+          "value": {
+            "Float": 100.0
+          },
+          "keyframes": [
+            {
+              "time": 0,
+              "value": {
+                "Float": 0.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 127135008000,
+              "value": {
+                "Float": 100.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 3188969784000,
+              "value": {
+                "Float": 100.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 3273726455999,
+              "value": {
+                "Float": 0.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            }
+          ]
+        },
+        "points": {
+          "value": {
+            "Curve": []
+          }
+        },
+        "position": {
+          "value": {
+            "Vec2": {
+              "x": 960.0,
+              "y": 405.0
+            }
+          }
+        },
+        "rotation": {
+          "value": {
+            "Float": -1.2
+          }
+        },
+        "scale": {
+          "value": {
+            "Float": 100.0
+          }
+        },
+        "scale_width": {
+          "value": {
+            "Float": 100.0
+          }
+        },
+        "shadow": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "shadow_angle": {
+          "value": {
+            "Float": 135.0
+          }
+        },
+        "shadow_blur": {
+          "value": {
+            "Float": 40.0
+          }
+        },
+        "shadow_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "shadow_distance": {
+          "value": {
+            "Float": 10.0
+          }
+        },
+        "shadow_opacity": {
+          "value": {
+            "Float": 75.0
+          }
+        },
+        "shadow_size": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "shape": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "sides": {
+          "value": {
+            "Float": 6.0
+          }
+        },
+        "size": {
+          "value": {
+            "Vec2": {
+              "x": 1080.0,
+              "y": 2.0
+            }
+          }
+        },
+        "stroke": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "stroke2": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "stroke2_color": {
+          "value": {
+            "Color": [
+              1.0,
+              0.85,
+              0.2,
+              1.0
+            ]
+          }
+        },
+        "stroke2_type": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "stroke2_width": {
+          "value": {
+            "Float": 10.0
+          }
+        },
+        "stroke_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "stroke_type": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "stroke_width": {
+          "value": {
+            "Float": 4.0
+          }
+        },
+        "uniform_scale": {
+          "value": {
+            "Bool": true
+          }
+        }
+      },
+      "layer": {
+        "uid": 4
+      }
+    },
+    {
+      "effect": "graphic_text",
+      "enabled": true,
+      "params": {
+        "align": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "anchor": {
+          "value": {
+            "Vec2": {
+              "x": 0.0,
+              "y": 0.0
+            }
+          }
+        },
+        "background": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "background_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "background_opacity": {
+          "value": {
+            "Float": 75.0
+          }
+        },
+        "background_radius": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "background_size": {
+          "value": {
+            "Float": 12.0
+          }
+        },
+        "baseline_shift": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "box_height": {
+          "value": {
+            "Float": 200.0
+          }
+        },
+        "box_width": {
+          "value": {
+            "Float": 1060.0
+          }
+        },
+        "caps": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "faux_bold": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "faux_italic": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "fill": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "fill_color": {
+          "value": {
+            "Color": [
+              0.05882353,
+              0.07058824,
+              0.09411765,
+              1.0
+            ]
+          }
+        },
+        "fill_kind": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "font": {
+          "value": {
+            "Text": "Spectral"
+          }
+        },
+        "font_style": {
+          "value": {
+            "Text": "Medium"
+          }
+        },
+        "gradient_angle": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "gradient_end": {
+          "value": {
+            "Color": [
+              0.15,
+              0.15,
+              0.15,
+              1.0
+            ]
+          }
+        },
+        "gradient_start": {
+          "value": {
+            "Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "kerning": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "leading": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "ligatures": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "name": {
+          "value": {
+            "Text": "Body"
+          }
+        },
+        "opacity": {
+          "value": {
+            "Float": 100.0
+          },
+          "keyframes": [
+            {
+              "time": 0,
+              "value": {
+                "Float": 0.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 127135008000,
+              "value": {
+                "Float": 100.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 3188969784000,
+              "value": {
+                "Float": 100.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 3273726455999,
+              "value": {
+                "Float": 0.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            }
+          ]
+        },
+        "position": {
+          "value": {
+            "Vec2": {
+              "x": 440.0,
+              "y": 430.0
+            }
+          }
+        },
+        "rotation": {
+          "value": {
+            "Float": -1.2
+          }
+        },
+        "scale": {
+          "value": {
+            "Float": 100.0
+          }
+        },
+        "scale_width": {
+          "value": {
+            "Float": 100.0
+          }
+        },
+        "shadow": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "shadow_angle": {
+          "value": {
+            "Float": 135.0
+          }
+        },
+        "shadow_blur": {
+          "value": {
+            "Float": 40.0
+          }
+        },
+        "shadow_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "shadow_distance": {
+          "value": {
+            "Float": 10.0
+          }
+        },
+        "shadow_opacity": {
+          "value": {
+            "Float": 75.0
+          }
+        },
+        "shadow_size": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "size": {
+          "value": {
+            "Float": 42.0
+          }
+        },
+        "strikethrough": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "stroke": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "stroke2": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "stroke2_color": {
+          "value": {
+            "Color": [
+              1.0,
+              0.85,
+              0.2,
+              1.0
+            ]
+          }
+        },
+        "stroke2_type": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "stroke2_width": {
+          "value": {
+            "Float": 10.0
+          }
+        },
+        "stroke_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "stroke_type": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "stroke_width": {
+          "value": {
+            "Float": 4.0
+          }
+        },
+        "text": {
+          "value": {
+            "Text": "I can remember the veterinarian coming out and taking care of the horses, and it made a huge impression on me."
+          }
+        },
+        "tracking": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "underline": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "uniform_scale": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "vertical": {
+          "value": {
+            "Bool": false
+          }
+        }
+      },
+      "layer": {
+        "uid": 5
+      }
+    },
+    {
+      "effect": "graphic_text",
+      "enabled": true,
+      "params": {
+        "align": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "anchor": {
+          "value": {
+            "Vec2": {
+              "x": 0.0,
+              "y": 0.0
+            }
+          }
+        },
+        "background": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "background_color": {
+          "value": {
+            "Color": [
+              0.9490196,
+              0.7882353,
+              0.29803923,
+              1.0
+            ]
+          }
+        },
+        "background_opacity": {
+          "value": {
+            "Float": 85.0
+          }
+        },
+        "background_radius": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "background_size": {
+          "value": {
+            "Float": 6.0
+          }
+        },
+        "baseline_shift": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "box_height": {
+          "value": {
+            "Float": 120.0
+          }
+        },
+        "box_width": {
+          "value": {
+            "Float": 1060.0
+          }
+        },
+        "caps": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "faux_bold": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "faux_italic": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "fill": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "fill_color": {
+          "value": {
+            "Color": [
+              0.05882353,
+              0.07058824,
+              0.09411765,
+              1.0
+            ]
+          }
+        },
+        "fill_kind": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "font": {
+          "value": {
+            "Text": "Spectral"
+          }
+        },
+        "font_style": {
+          "value": {
+            "Text": "SemiBold"
+          }
+        },
+        "gradient_angle": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "gradient_end": {
+          "value": {
+            "Color": [
+              0.15,
+              0.15,
+              0.15,
+              1.0
+            ]
+          }
+        },
+        "gradient_start": {
+          "value": {
+            "Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "kerning": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "leading": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "ligatures": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "name": {
+          "value": {
+            "Text": "Highlighted sentence"
+          }
+        },
+        "opacity": {
+          "value": {
+            "Float": 100.0
+          },
+          "keyframes": [
+            {
+              "time": 254270016000,
+              "value": {
+                "Float": 0.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 370810440000,
+              "value": {
+                "Float": 100.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 3188969784000,
+              "value": {
+                "Float": 100.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 3273726455999,
+              "value": {
+                "Float": 0.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            }
+          ]
+        },
+        "position": {
+          "value": {
+            "Vec2": {
+              "x": 440.0,
+              "y": 652.0
+            }
+          }
+        },
+        "rotation": {
+          "value": {
+            "Float": -1.2
+          }
+        },
+        "scale": {
+          "value": {
+            "Float": 100.0
+          }
+        },
+        "scale_width": {
+          "value": {
+            "Float": 100.0
+          }
+        },
+        "shadow": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "shadow_angle": {
+          "value": {
+            "Float": 135.0
+          }
+        },
+        "shadow_blur": {
+          "value": {
+            "Float": 40.0
+          }
+        },
+        "shadow_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "shadow_distance": {
+          "value": {
+            "Float": 10.0
+          }
+        },
+        "shadow_opacity": {
+          "value": {
+            "Float": 75.0
+          }
+        },
+        "shadow_size": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "size": {
+          "value": {
+            "Float": 42.0
+          }
+        },
+        "strikethrough": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "stroke": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "stroke2": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "stroke2_color": {
+          "value": {
+            "Color": [
+              1.0,
+              0.85,
+              0.2,
+              1.0
+            ]
+          }
+        },
+        "stroke2_type": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "stroke2_width": {
+          "value": {
+            "Float": 10.0
+          }
+        },
+        "stroke_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "stroke_type": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "stroke_width": {
+          "value": {
+            "Float": 4.0
+          }
+        },
+        "text": {
+          "value": {
+            "Text": "This person really enjoyed what he did for a living."
+          }
+        },
+        "tracking": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "underline": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "uniform_scale": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "vertical": {
+          "value": {
+            "Bool": false
+          }
+        }
+      },
+      "layer": {
+        "uid": 6
+      }
+    },
+    {
+      "effect": "graphic_text",
+      "enabled": true,
+      "params": {
+        "align": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "anchor": {
+          "value": {
+            "Vec2": {
+              "x": 0.0,
+              "y": 0.0
+            }
+          }
+        },
+        "background": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "background_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "background_opacity": {
+          "value": {
+            "Float": 75.0
+          }
+        },
+        "background_radius": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "background_size": {
+          "value": {
+            "Float": 12.0
+          }
+        },
+        "baseline_shift": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "box_height": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "box_width": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "caps": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "faux_bold": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "faux_italic": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "fill": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "fill_color": {
+          "value": {
+            "Color": [
+              0.3529412,
+              0.3764706,
+              0.41960785,
+              1.0
+            ]
+          }
+        },
+        "fill_kind": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "font": {
+          "value": {
+            "Text": "Spectral"
+          }
+        },
+        "font_style": {
+          "value": {
+            "Text": "Medium Italic"
+          }
+        },
+        "gradient_angle": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "gradient_end": {
+          "value": {
+            "Color": [
+              0.15,
+              0.15,
+              0.15,
+              1.0
+            ]
+          }
+        },
+        "gradient_start": {
+          "value": {
+            "Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "kerning": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "leading": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "ligatures": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "name": {
+          "value": {
+            "Text": "Footer"
+          }
+        },
+        "opacity": {
+          "value": {
+            "Float": 100.0
+          },
+          "keyframes": [
+            {
+              "time": 0,
+              "value": {
+                "Float": 0.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 127135008000,
+              "value": {
+                "Float": 100.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 3188969784000,
+              "value": {
+                "Float": 100.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 3273726455999,
+              "value": {
+                "Float": 0.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            }
+          ]
+        },
+        "position": {
+          "value": {
+            "Vec2": {
+              "x": 440.0,
+              "y": 840.0
+            }
+          }
+        },
+        "rotation": {
+          "value": {
+            "Float": -1.2
+          }
+        },
+        "scale": {
+          "value": {
+            "Float": 100.0
+          }
+        },
+        "scale_width": {
+          "value": {
+            "Float": 100.0
+          }
+        },
+        "shadow": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "shadow_angle": {
+          "value": {
+            "Float": 135.0
+          }
+        },
+        "shadow_blur": {
+          "value": {
+            "Float": 40.0
+          }
+        },
+        "shadow_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "shadow_distance": {
+          "value": {
+            "Float": 10.0
+          }
+        },
+        "shadow_opacity": {
+          "value": {
+            "Float": 75.0
+          }
+        },
+        "shadow_size": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "size": {
+          "value": {
+            "Float": 28.0
+          }
+        },
+        "strikethrough": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "stroke": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "stroke2": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "stroke2_color": {
+          "value": {
+            "Color": [
+              1.0,
+              0.85,
+              0.2,
+              1.0
+            ]
+          }
+        },
+        "stroke2_type": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "stroke2_width": {
+          "value": {
+            "Float": 10.0
+          }
+        },
+        "stroke_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "stroke_type": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "stroke_width": {
+          "value": {
+            "Float": 4.0
+          }
+        },
+        "text": {
+          "value": {
+            "Text": "Quoted passage, typeset from the published interview."
+          }
+        },
+        "tracking": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "underline": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "uniform_scale": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "vertical": {
+          "value": {
+            "Bool": false
+          }
+        }
+      },
+      "layer": {
+        "uid": 7
+      }
+    }
+  ],
+  "graphic": {
+    "intro": 406425600000,
+    "outro": 101606400000,
+    "designIn": 0,
+    "designDuration": 3273726456000
+  },
+  "controls": [
+    {
+      "id": "text1",
+      "name": "Masthead",
+      "kind": "text",
+      "layer": 2,
+      "param": "text"
+    },
+    {
+      "id": "text2",
+      "name": "Meta",
+      "kind": "text",
+      "layer": 3,
+      "param": "text"
+    },
+    {
+      "id": "text3",
+      "name": "Body",
+      "kind": "text",
+      "layer": 5,
+      "param": "text"
+    },
+    {
+      "id": "text4",
+      "name": "Highlighted sentence",
+      "kind": "text",
+      "layer": 6,
+      "param": "text"
+    },
+    {
+      "id": "text5",
+      "name": "Footer",
+      "kind": "text",
+      "layer": 7,
+      "param": "text"
+    }
+  ]
+}

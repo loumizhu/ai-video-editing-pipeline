@@ -1,0 +1,3601 @@
+{
+  "format": "filmcraft.graphicsTemplate",
+  "version": 1,
+  "id": "user:house-timeline-strip",
+  "name": "House - timeline-strip",
+  "category": "Publora House Style",
+  "description": "documentary-default timeline-strip, native layers",
+  "author": "",
+  "license": "",
+  "tags": [],
+  "canvas": [
+    1920,
+    1080
+  ],
+  "duration": 1525620096000,
+  "layers": [
+    {
+      "effect": "graphic_shape",
+      "enabled": true,
+      "params": {
+        "anchor": {
+          "value": {
+            "Vec2": {
+              "x": 0.0,
+              "y": 0.0
+            }
+          }
+        },
+        "background": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "background_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "background_opacity": {
+          "value": {
+            "Float": 75.0
+          }
+        },
+        "background_radius": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "background_size": {
+          "value": {
+            "Float": 12.0
+          }
+        },
+        "corner_radius": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "fill": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "fill_color": {
+          "value": {
+            "Color": [
+              0.05882353,
+              0.07058824,
+              0.09411765,
+              1.0
+            ]
+          }
+        },
+        "fill_kind": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "gradient_angle": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "gradient_end": {
+          "value": {
+            "Color": [
+              0.15,
+              0.15,
+              0.15,
+              1.0
+            ]
+          }
+        },
+        "gradient_start": {
+          "value": {
+            "Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "name": {
+          "value": {
+            "Text": "Plate"
+          }
+        },
+        "opacity": {
+          "value": {
+            "Float": 78.0
+          },
+          "keyframes": [
+            {
+              "time": 0,
+              "value": {
+                "Float": 0.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 105945840000,
+              "value": {
+                "Float": 78.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 1440863424000,
+              "value": {
+                "Float": 78.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 1525620095999,
+              "value": {
+                "Float": 0.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            }
+          ]
+        },
+        "points": {
+          "value": {
+            "Curve": []
+          }
+        },
+        "position": {
+          "value": {
+            "Vec2": {
+              "x": 935.780990600586,
+              "y": 875.8339996337891
+            }
+          }
+        },
+        "rotation": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "scale": {
+          "value": {
+            "Float": 100.0
+          }
+        },
+        "scale_width": {
+          "value": {
+            "Float": 100.0
+          }
+        },
+        "shadow": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "shadow_angle": {
+          "value": {
+            "Float": 135.0
+          }
+        },
+        "shadow_blur": {
+          "value": {
+            "Float": 40.0
+          }
+        },
+        "shadow_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "shadow_distance": {
+          "value": {
+            "Float": 10.0
+          }
+        },
+        "shadow_opacity": {
+          "value": {
+            "Float": 75.0
+          }
+        },
+        "shadow_size": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "shape": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "sides": {
+          "value": {
+            "Float": 6.0
+          }
+        },
+        "size": {
+          "value": {
+            "Vec2": {
+              "x": 1570.2020263671875,
+              "y": 231.66799926757812
+            }
+          }
+        },
+        "stroke": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "stroke2": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "stroke2_color": {
+          "value": {
+            "Color": [
+              1.0,
+              0.85,
+              0.2,
+              1.0
+            ]
+          }
+        },
+        "stroke2_type": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "stroke2_width": {
+          "value": {
+            "Float": 10.0
+          }
+        },
+        "stroke_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "stroke_type": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "stroke_width": {
+          "value": {
+            "Float": 4.0
+          }
+        },
+        "uniform_scale": {
+          "value": {
+            "Bool": true
+          }
+        }
+      },
+      "layer": {
+        "uid": 11,
+        "pin": {
+          "to": {
+            "layer": 1
+          },
+          "left": true,
+          "top": true,
+          "right": true,
+          "bottom": true,
+          "offsets": [
+            -249.3200225830077,
+            -118.5,
+            200.8820037841797,
+            110.16799926757812
+          ]
+        }
+      }
+    },
+    {
+      "effect": "graphic_shape",
+      "enabled": true,
+      "params": {
+        "anchor": {
+          "value": {
+            "Vec2": {
+              "x": 0.0,
+              "y": 0.0
+            }
+          }
+        },
+        "background": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "background_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "background_opacity": {
+          "value": {
+            "Float": 75.0
+          }
+        },
+        "background_radius": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "background_size": {
+          "value": {
+            "Float": 12.0
+          }
+        },
+        "corner_radius": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "fill": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "fill_color": {
+          "value": {
+            "Color": [
+              0.6039216,
+              0.627451,
+              0.65882355,
+              1.0
+            ]
+          }
+        },
+        "fill_kind": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "gradient_angle": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "gradient_end": {
+          "value": {
+            "Color": [
+              0.15,
+              0.15,
+              0.15,
+              1.0
+            ]
+          }
+        },
+        "gradient_start": {
+          "value": {
+            "Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "name": {
+          "value": {
+            "Text": "Line"
+          }
+        },
+        "opacity": {
+          "value": {
+            "Float": 100.0
+          },
+          "keyframes": [
+            {
+              "time": 0,
+              "value": {
+                "Float": 0.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 116540424000,
+              "value": {
+                "Float": 100.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 1440863424000,
+              "value": {
+                "Float": 100.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 1525620095999,
+              "value": {
+                "Float": 0.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            }
+          ]
+        },
+        "points": {
+          "value": {
+            "Curve": []
+          }
+        },
+        "position": {
+          "value": {
+            "Vec2": {
+              "x": 960.0,
+              "y": 880.0
+            }
+          }
+        },
+        "rotation": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "scale": {
+          "value": {
+            "Float": 100.0
+          }
+        },
+        "scale_width": {
+          "value": {
+            "Float": 100.0
+          }
+        },
+        "shadow": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "shadow_angle": {
+          "value": {
+            "Float": 135.0
+          }
+        },
+        "shadow_blur": {
+          "value": {
+            "Float": 40.0
+          }
+        },
+        "shadow_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "shadow_distance": {
+          "value": {
+            "Float": 10.0
+          }
+        },
+        "shadow_opacity": {
+          "value": {
+            "Float": 75.0
+          }
+        },
+        "shadow_size": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "shape": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "sides": {
+          "value": {
+            "Float": 6.0
+          }
+        },
+        "size": {
+          "value": {
+            "Vec2": {
+              "x": 1120.0,
+              "y": 3.0
+            }
+          }
+        },
+        "stroke": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "stroke2": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "stroke2_color": {
+          "value": {
+            "Color": [
+              1.0,
+              0.85,
+              0.2,
+              1.0
+            ]
+          }
+        },
+        "stroke2_type": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "stroke2_width": {
+          "value": {
+            "Float": 10.0
+          }
+        },
+        "stroke_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "stroke_type": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "stroke_width": {
+          "value": {
+            "Float": 4.0
+          }
+        },
+        "uniform_scale": {
+          "value": {
+            "Bool": true
+          }
+        }
+      },
+      "layer": {
+        "uid": 1
+      }
+    },
+    {
+      "effect": "graphic_shape",
+      "enabled": true,
+      "params": {
+        "anchor": {
+          "value": {
+            "Vec2": {
+              "x": 0.0,
+              "y": 0.0
+            }
+          }
+        },
+        "background": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "background_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "background_opacity": {
+          "value": {
+            "Float": 75.0
+          }
+        },
+        "background_radius": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "background_size": {
+          "value": {
+            "Float": 12.0
+          }
+        },
+        "corner_radius": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "fill": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "fill_color": {
+          "value": {
+            "Color": [
+              0.83137256,
+              0.6862745,
+              0.21568628,
+              1.0
+            ]
+          }
+        },
+        "fill_kind": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "gradient_angle": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "gradient_end": {
+          "value": {
+            "Color": [
+              0.15,
+              0.15,
+              0.15,
+              1.0
+            ]
+          }
+        },
+        "gradient_start": {
+          "value": {
+            "Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "name": {
+          "value": {
+            "Text": "Dot 1985"
+          }
+        },
+        "opacity": {
+          "value": {
+            "Float": 100.0
+          },
+          "keyframes": [
+            {
+              "time": 74162088000,
+              "value": {
+                "Float": 0.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 190702512000,
+              "value": {
+                "Float": 100.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 1440863424000,
+              "value": {
+                "Float": 100.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 1525620095999,
+              "value": {
+                "Float": 0.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            }
+          ]
+        },
+        "points": {
+          "value": {
+            "Curve": []
+          }
+        },
+        "position": {
+          "value": {
+            "Vec2": {
+              "x": 420.0,
+              "y": 880.0
+            }
+          }
+        },
+        "rotation": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "scale": {
+          "value": {
+            "Float": 100.0
+          }
+        },
+        "scale_width": {
+          "value": {
+            "Float": 100.0
+          }
+        },
+        "shadow": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "shadow_angle": {
+          "value": {
+            "Float": 135.0
+          }
+        },
+        "shadow_blur": {
+          "value": {
+            "Float": 40.0
+          }
+        },
+        "shadow_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "shadow_distance": {
+          "value": {
+            "Float": 10.0
+          }
+        },
+        "shadow_opacity": {
+          "value": {
+            "Float": 75.0
+          }
+        },
+        "shadow_size": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "shape": {
+          "value": {
+            "Choice": 1
+          }
+        },
+        "sides": {
+          "value": {
+            "Float": 6.0
+          }
+        },
+        "size": {
+          "value": {
+            "Vec2": {
+              "x": 20.0,
+              "y": 20.0
+            }
+          }
+        },
+        "stroke": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "stroke2": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "stroke2_color": {
+          "value": {
+            "Color": [
+              1.0,
+              0.85,
+              0.2,
+              1.0
+            ]
+          }
+        },
+        "stroke2_type": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "stroke2_width": {
+          "value": {
+            "Float": 10.0
+          }
+        },
+        "stroke_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "stroke_type": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "stroke_width": {
+          "value": {
+            "Float": 4.0
+          }
+        },
+        "uniform_scale": {
+          "value": {
+            "Bool": true
+          }
+        }
+      },
+      "layer": {
+        "uid": 2
+      }
+    },
+    {
+      "effect": "graphic_text",
+      "enabled": true,
+      "params": {
+        "align": {
+          "value": {
+            "Choice": 1
+          }
+        },
+        "anchor": {
+          "value": {
+            "Vec2": {
+              "x": 0.0,
+              "y": 0.0
+            }
+          }
+        },
+        "background": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "background_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "background_opacity": {
+          "value": {
+            "Float": 75.0
+          }
+        },
+        "background_radius": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "background_size": {
+          "value": {
+            "Float": 12.0
+          }
+        },
+        "baseline_shift": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "box_height": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "box_width": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "caps": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "faux_bold": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "faux_italic": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "fill": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "fill_color": {
+          "value": {
+            "Color": [
+              1.0,
+              0.9098039,
+              0.72156864,
+              1.0
+            ]
+          }
+        },
+        "fill_kind": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "font": {
+          "value": {
+            "Text": "Barlow Condensed"
+          }
+        },
+        "font_style": {
+          "value": {
+            "Text": "ExtraBold"
+          }
+        },
+        "gradient_angle": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "gradient_end": {
+          "value": {
+            "Color": [
+              0.15,
+              0.15,
+              0.15,
+              1.0
+            ]
+          }
+        },
+        "gradient_start": {
+          "value": {
+            "Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "kerning": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "leading": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "ligatures": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "name": {
+          "value": {
+            "Text": "Year 1985"
+          }
+        },
+        "opacity": {
+          "value": {
+            "Float": 100.0
+          },
+          "keyframes": [
+            {
+              "time": 84756672000,
+              "value": {
+                "Float": 0.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 201297096000,
+              "value": {
+                "Float": 100.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 1440863424000,
+              "value": {
+                "Float": 100.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 1525620095999,
+              "value": {
+                "Float": 0.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            }
+          ]
+        },
+        "position": {
+          "value": {
+            "Vec2": {
+              "x": 420.0,
+              "y": 850.0
+            }
+          }
+        },
+        "rotation": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "scale": {
+          "value": {
+            "Float": 100.0
+          }
+        },
+        "scale_width": {
+          "value": {
+            "Float": 100.0
+          }
+        },
+        "shadow": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "shadow_angle": {
+          "value": {
+            "Float": 120.0
+          }
+        },
+        "shadow_blur": {
+          "value": {
+            "Float": 18.0
+          }
+        },
+        "shadow_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "shadow_distance": {
+          "value": {
+            "Float": 3.0
+          }
+        },
+        "shadow_opacity": {
+          "value": {
+            "Float": 55.0
+          }
+        },
+        "shadow_size": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "size": {
+          "value": {
+            "Float": 60.0
+          }
+        },
+        "strikethrough": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "stroke": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "stroke2": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "stroke2_color": {
+          "value": {
+            "Color": [
+              1.0,
+              0.85,
+              0.2,
+              1.0
+            ]
+          }
+        },
+        "stroke2_type": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "stroke2_width": {
+          "value": {
+            "Float": 10.0
+          }
+        },
+        "stroke_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "stroke_type": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "stroke_width": {
+          "value": {
+            "Float": 4.0
+          }
+        },
+        "text": {
+          "value": {
+            "Text": "1985"
+          }
+        },
+        "tracking": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "underline": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "uniform_scale": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "vertical": {
+          "value": {
+            "Bool": false
+          }
+        }
+      },
+      "layer": {
+        "uid": 3
+      }
+    },
+    {
+      "effect": "graphic_text",
+      "enabled": true,
+      "params": {
+        "align": {
+          "value": {
+            "Choice": 1
+          }
+        },
+        "anchor": {
+          "value": {
+            "Vec2": {
+              "x": 0.0,
+              "y": 0.0
+            }
+          }
+        },
+        "background": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "background_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "background_opacity": {
+          "value": {
+            "Float": 75.0
+          }
+        },
+        "background_radius": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "background_size": {
+          "value": {
+            "Float": 12.0
+          }
+        },
+        "baseline_shift": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "box_height": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "box_width": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "caps": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "faux_bold": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "faux_italic": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "fill": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "fill_color": {
+          "value": {
+            "Color": [
+              0.9529412,
+              0.92156863,
+              0.8666667,
+              1.0
+            ]
+          }
+        },
+        "fill_kind": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "font": {
+          "value": {
+            "Text": "Spectral"
+          }
+        },
+        "font_style": {
+          "value": {
+            "Text": "Medium"
+          }
+        },
+        "gradient_angle": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "gradient_end": {
+          "value": {
+            "Color": [
+              0.15,
+              0.15,
+              0.15,
+              1.0
+            ]
+          }
+        },
+        "gradient_start": {
+          "value": {
+            "Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "kerning": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "leading": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "ligatures": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "name": {
+          "value": {
+            "Text": "Label 1985"
+          }
+        },
+        "opacity": {
+          "value": {
+            "Float": 100.0
+          },
+          "keyframes": [
+            {
+              "time": 116540424000,
+              "value": {
+                "Float": 0.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 233080848000,
+              "value": {
+                "Float": 100.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 1440863424000,
+              "value": {
+                "Float": 100.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 1525620095999,
+              "value": {
+                "Float": 0.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            }
+          ]
+        },
+        "position": {
+          "value": {
+            "Vec2": {
+              "x": 420.0,
+              "y": 945.0
+            }
+          }
+        },
+        "rotation": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "scale": {
+          "value": {
+            "Float": 100.0
+          }
+        },
+        "scale_width": {
+          "value": {
+            "Float": 100.0
+          }
+        },
+        "shadow": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "shadow_angle": {
+          "value": {
+            "Float": 120.0
+          }
+        },
+        "shadow_blur": {
+          "value": {
+            "Float": 18.0
+          }
+        },
+        "shadow_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "shadow_distance": {
+          "value": {
+            "Float": 3.0
+          }
+        },
+        "shadow_opacity": {
+          "value": {
+            "Float": 55.0
+          }
+        },
+        "shadow_size": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "size": {
+          "value": {
+            "Float": 36.0
+          }
+        },
+        "strikethrough": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "stroke": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "stroke2": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "stroke2_color": {
+          "value": {
+            "Color": [
+              1.0,
+              0.85,
+              0.2,
+              1.0
+            ]
+          }
+        },
+        "stroke2_type": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "stroke2_width": {
+          "value": {
+            "Float": 10.0
+          }
+        },
+        "stroke_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "stroke_type": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "stroke_width": {
+          "value": {
+            "Float": 4.0
+          }
+        },
+        "text": {
+          "value": {
+            "Text": "Plays Chunk in The Goonies"
+          }
+        },
+        "tracking": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "underline": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "uniform_scale": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "vertical": {
+          "value": {
+            "Bool": false
+          }
+        }
+      },
+      "layer": {
+        "uid": 4
+      }
+    },
+    {
+      "effect": "graphic_shape",
+      "enabled": true,
+      "params": {
+        "anchor": {
+          "value": {
+            "Vec2": {
+              "x": 0.0,
+              "y": 0.0
+            }
+          }
+        },
+        "background": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "background_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "background_opacity": {
+          "value": {
+            "Float": 75.0
+          }
+        },
+        "background_radius": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "background_size": {
+          "value": {
+            "Float": 12.0
+          }
+        },
+        "corner_radius": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "fill": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "fill_color": {
+          "value": {
+            "Color": [
+              0.83137256,
+              0.6862745,
+              0.21568628,
+              1.0
+            ]
+          }
+        },
+        "fill_kind": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "gradient_angle": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "gradient_end": {
+          "value": {
+            "Color": [
+              0.15,
+              0.15,
+              0.15,
+              1.0
+            ]
+          }
+        },
+        "gradient_start": {
+          "value": {
+            "Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "name": {
+          "value": {
+            "Text": "Dot 2002"
+          }
+        },
+        "opacity": {
+          "value": {
+            "Float": 100.0
+          },
+          "keyframes": [
+            {
+              "time": 211891680000,
+              "value": {
+                "Float": 0.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 328432104000,
+              "value": {
+                "Float": 100.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 1440863424000,
+              "value": {
+                "Float": 100.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 1525620095999,
+              "value": {
+                "Float": 0.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            }
+          ]
+        },
+        "points": {
+          "value": {
+            "Curve": []
+          }
+        },
+        "position": {
+          "value": {
+            "Vec2": {
+              "x": 960.0,
+              "y": 880.0
+            }
+          }
+        },
+        "rotation": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "scale": {
+          "value": {
+            "Float": 100.0
+          }
+        },
+        "scale_width": {
+          "value": {
+            "Float": 100.0
+          }
+        },
+        "shadow": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "shadow_angle": {
+          "value": {
+            "Float": 135.0
+          }
+        },
+        "shadow_blur": {
+          "value": {
+            "Float": 40.0
+          }
+        },
+        "shadow_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "shadow_distance": {
+          "value": {
+            "Float": 10.0
+          }
+        },
+        "shadow_opacity": {
+          "value": {
+            "Float": 75.0
+          }
+        },
+        "shadow_size": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "shape": {
+          "value": {
+            "Choice": 1
+          }
+        },
+        "sides": {
+          "value": {
+            "Float": 6.0
+          }
+        },
+        "size": {
+          "value": {
+            "Vec2": {
+              "x": 20.0,
+              "y": 20.0
+            }
+          }
+        },
+        "stroke": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "stroke2": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "stroke2_color": {
+          "value": {
+            "Color": [
+              1.0,
+              0.85,
+              0.2,
+              1.0
+            ]
+          }
+        },
+        "stroke2_type": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "stroke2_width": {
+          "value": {
+            "Float": 10.0
+          }
+        },
+        "stroke_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "stroke_type": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "stroke_width": {
+          "value": {
+            "Float": 4.0
+          }
+        },
+        "uniform_scale": {
+          "value": {
+            "Bool": true
+          }
+        }
+      },
+      "layer": {
+        "uid": 5
+      }
+    },
+    {
+      "effect": "graphic_text",
+      "enabled": true,
+      "params": {
+        "align": {
+          "value": {
+            "Choice": 1
+          }
+        },
+        "anchor": {
+          "value": {
+            "Vec2": {
+              "x": 0.0,
+              "y": 0.0
+            }
+          }
+        },
+        "background": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "background_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "background_opacity": {
+          "value": {
+            "Float": 75.0
+          }
+        },
+        "background_radius": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "background_size": {
+          "value": {
+            "Float": 12.0
+          }
+        },
+        "baseline_shift": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "box_height": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "box_width": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "caps": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "faux_bold": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "faux_italic": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "fill": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "fill_color": {
+          "value": {
+            "Color": [
+              1.0,
+              0.9098039,
+              0.72156864,
+              1.0
+            ]
+          }
+        },
+        "fill_kind": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "font": {
+          "value": {
+            "Text": "Barlow Condensed"
+          }
+        },
+        "font_style": {
+          "value": {
+            "Text": "ExtraBold"
+          }
+        },
+        "gradient_angle": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "gradient_end": {
+          "value": {
+            "Color": [
+              0.15,
+              0.15,
+              0.15,
+              1.0
+            ]
+          }
+        },
+        "gradient_start": {
+          "value": {
+            "Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "kerning": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "leading": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "ligatures": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "name": {
+          "value": {
+            "Text": "Year 2002"
+          }
+        },
+        "opacity": {
+          "value": {
+            "Float": 100.0
+          },
+          "keyframes": [
+            {
+              "time": 233080848000,
+              "value": {
+                "Float": 0.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 339026688000,
+              "value": {
+                "Float": 100.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 1440863424000,
+              "value": {
+                "Float": 100.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 1525620095999,
+              "value": {
+                "Float": 0.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            }
+          ]
+        },
+        "position": {
+          "value": {
+            "Vec2": {
+              "x": 960.0,
+              "y": 850.0
+            }
+          }
+        },
+        "rotation": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "scale": {
+          "value": {
+            "Float": 100.0
+          }
+        },
+        "scale_width": {
+          "value": {
+            "Float": 100.0
+          }
+        },
+        "shadow": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "shadow_angle": {
+          "value": {
+            "Float": 120.0
+          }
+        },
+        "shadow_blur": {
+          "value": {
+            "Float": 18.0
+          }
+        },
+        "shadow_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "shadow_distance": {
+          "value": {
+            "Float": 3.0
+          }
+        },
+        "shadow_opacity": {
+          "value": {
+            "Float": 55.0
+          }
+        },
+        "shadow_size": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "size": {
+          "value": {
+            "Float": 60.0
+          }
+        },
+        "strikethrough": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "stroke": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "stroke2": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "stroke2_color": {
+          "value": {
+            "Color": [
+              1.0,
+              0.85,
+              0.2,
+              1.0
+            ]
+          }
+        },
+        "stroke2_type": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "stroke2_width": {
+          "value": {
+            "Float": 10.0
+          }
+        },
+        "stroke_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "stroke_type": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "stroke_width": {
+          "value": {
+            "Float": 4.0
+          }
+        },
+        "text": {
+          "value": {
+            "Text": "2002"
+          }
+        },
+        "tracking": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "underline": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "uniform_scale": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "vertical": {
+          "value": {
+            "Bool": false
+          }
+        }
+      },
+      "layer": {
+        "uid": 6
+      }
+    },
+    {
+      "effect": "graphic_text",
+      "enabled": true,
+      "params": {
+        "align": {
+          "value": {
+            "Choice": 1
+          }
+        },
+        "anchor": {
+          "value": {
+            "Vec2": {
+              "x": 0.0,
+              "y": 0.0
+            }
+          }
+        },
+        "background": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "background_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "background_opacity": {
+          "value": {
+            "Float": 75.0
+          }
+        },
+        "background_radius": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "background_size": {
+          "value": {
+            "Float": 12.0
+          }
+        },
+        "baseline_shift": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "box_height": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "box_width": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "caps": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "faux_bold": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "faux_italic": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "fill": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "fill_color": {
+          "value": {
+            "Color": [
+              0.9529412,
+              0.92156863,
+              0.8666667,
+              1.0
+            ]
+          }
+        },
+        "fill_kind": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "font": {
+          "value": {
+            "Text": "Spectral"
+          }
+        },
+        "font_style": {
+          "value": {
+            "Text": "Medium"
+          }
+        },
+        "gradient_angle": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "gradient_end": {
+          "value": {
+            "Color": [
+              0.15,
+              0.15,
+              0.15,
+              1.0
+            ]
+          }
+        },
+        "gradient_start": {
+          "value": {
+            "Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "kerning": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "leading": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "ligatures": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "name": {
+          "value": {
+            "Text": "Label 2002"
+          }
+        },
+        "opacity": {
+          "value": {
+            "Float": 100.0
+          },
+          "keyframes": [
+            {
+              "time": 254270016000,
+              "value": {
+                "Float": 0.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 370810440000,
+              "value": {
+                "Float": 100.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 1440863424000,
+              "value": {
+                "Float": 100.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 1525620095999,
+              "value": {
+                "Float": 0.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            }
+          ]
+        },
+        "position": {
+          "value": {
+            "Vec2": {
+              "x": 960.0,
+              "y": 945.0
+            }
+          }
+        },
+        "rotation": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "scale": {
+          "value": {
+            "Float": 100.0
+          }
+        },
+        "scale_width": {
+          "value": {
+            "Float": 100.0
+          }
+        },
+        "shadow": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "shadow_angle": {
+          "value": {
+            "Float": 120.0
+          }
+        },
+        "shadow_blur": {
+          "value": {
+            "Float": 18.0
+          }
+        },
+        "shadow_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "shadow_distance": {
+          "value": {
+            "Float": 3.0
+          }
+        },
+        "shadow_opacity": {
+          "value": {
+            "Float": 55.0
+          }
+        },
+        "shadow_size": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "size": {
+          "value": {
+            "Float": 36.0
+          }
+        },
+        "strikethrough": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "stroke": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "stroke2": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "stroke2_color": {
+          "value": {
+            "Color": [
+              1.0,
+              0.85,
+              0.2,
+              1.0
+            ]
+          }
+        },
+        "stroke2_type": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "stroke2_width": {
+          "value": {
+            "Float": 10.0
+          }
+        },
+        "stroke_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "stroke_type": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "stroke_width": {
+          "value": {
+            "Float": 4.0
+          }
+        },
+        "text": {
+          "value": {
+            "Text": "Opens his own law firm"
+          }
+        },
+        "tracking": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "underline": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "uniform_scale": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "vertical": {
+          "value": {
+            "Bool": false
+          }
+        }
+      },
+      "layer": {
+        "uid": 7
+      }
+    },
+    {
+      "effect": "graphic_shape",
+      "enabled": true,
+      "params": {
+        "anchor": {
+          "value": {
+            "Vec2": {
+              "x": 0.0,
+              "y": 0.0
+            }
+          }
+        },
+        "background": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "background_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "background_opacity": {
+          "value": {
+            "Float": 75.0
+          }
+        },
+        "background_radius": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "background_size": {
+          "value": {
+            "Float": 12.0
+          }
+        },
+        "corner_radius": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "fill": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "fill_color": {
+          "value": {
+            "Color": [
+              0.7882353,
+              0.2784314,
+              0.23921569,
+              1.0
+            ]
+          }
+        },
+        "fill_kind": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "gradient_angle": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "gradient_end": {
+          "value": {
+            "Color": [
+              0.15,
+              0.15,
+              0.15,
+              1.0
+            ]
+          }
+        },
+        "gradient_start": {
+          "value": {
+            "Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "name": {
+          "value": {
+            "Text": "Dot 2023"
+          }
+        },
+        "opacity": {
+          "value": {
+            "Float": 100.0
+          },
+          "keyframes": [
+            {
+              "time": 360215856000,
+              "value": {
+                "Float": 0.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 466161696000,
+              "value": {
+                "Float": 100.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 1440863424000,
+              "value": {
+                "Float": 100.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 1525620095999,
+              "value": {
+                "Float": 0.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            }
+          ]
+        },
+        "points": {
+          "value": {
+            "Curve": []
+          }
+        },
+        "position": {
+          "value": {
+            "Vec2": {
+              "x": 1500.0,
+              "y": 880.0
+            }
+          }
+        },
+        "rotation": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "scale": {
+          "value": {
+            "Float": 100.0
+          }
+        },
+        "scale_width": {
+          "value": {
+            "Float": 100.0
+          }
+        },
+        "shadow": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "shadow_angle": {
+          "value": {
+            "Float": 135.0
+          }
+        },
+        "shadow_blur": {
+          "value": {
+            "Float": 40.0
+          }
+        },
+        "shadow_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "shadow_distance": {
+          "value": {
+            "Float": 10.0
+          }
+        },
+        "shadow_opacity": {
+          "value": {
+            "Float": 75.0
+          }
+        },
+        "shadow_size": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "shape": {
+          "value": {
+            "Choice": 1
+          }
+        },
+        "sides": {
+          "value": {
+            "Float": 6.0
+          }
+        },
+        "size": {
+          "value": {
+            "Vec2": {
+              "x": 20.0,
+              "y": 20.0
+            }
+          }
+        },
+        "stroke": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "stroke2": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "stroke2_color": {
+          "value": {
+            "Color": [
+              1.0,
+              0.85,
+              0.2,
+              1.0
+            ]
+          }
+        },
+        "stroke2_type": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "stroke2_width": {
+          "value": {
+            "Float": 10.0
+          }
+        },
+        "stroke_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "stroke_type": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "stroke_width": {
+          "value": {
+            "Float": 4.0
+          }
+        },
+        "uniform_scale": {
+          "value": {
+            "Bool": true
+          }
+        }
+      },
+      "layer": {
+        "uid": 8
+      }
+    },
+    {
+      "effect": "graphic_text",
+      "enabled": true,
+      "params": {
+        "align": {
+          "value": {
+            "Choice": 1
+          }
+        },
+        "anchor": {
+          "value": {
+            "Vec2": {
+              "x": 0.0,
+              "y": 0.0
+            }
+          }
+        },
+        "background": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "background_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "background_opacity": {
+          "value": {
+            "Float": 75.0
+          }
+        },
+        "background_radius": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "background_size": {
+          "value": {
+            "Float": 12.0
+          }
+        },
+        "baseline_shift": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "box_height": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "box_width": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "caps": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "faux_bold": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "faux_italic": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "fill": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "fill_color": {
+          "value": {
+            "Color": [
+              0.9529412,
+              0.92156863,
+              0.8666667,
+              1.0
+            ]
+          }
+        },
+        "fill_kind": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "font": {
+          "value": {
+            "Text": "Barlow Condensed"
+          }
+        },
+        "font_style": {
+          "value": {
+            "Text": "ExtraBold"
+          }
+        },
+        "gradient_angle": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "gradient_end": {
+          "value": {
+            "Color": [
+              0.15,
+              0.15,
+              0.15,
+              1.0
+            ]
+          }
+        },
+        "gradient_start": {
+          "value": {
+            "Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "kerning": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "leading": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "ligatures": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "name": {
+          "value": {
+            "Text": "Year 2023"
+          }
+        },
+        "opacity": {
+          "value": {
+            "Float": 100.0
+          },
+          "keyframes": [
+            {
+              "time": 370810440000,
+              "value": {
+                "Float": 0.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 487350864000,
+              "value": {
+                "Float": 100.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 1440863424000,
+              "value": {
+                "Float": 100.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 1525620095999,
+              "value": {
+                "Float": 0.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            }
+          ]
+        },
+        "position": {
+          "value": {
+            "Vec2": {
+              "x": 1500.0,
+              "y": 850.0
+            }
+          }
+        },
+        "rotation": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "scale": {
+          "value": {
+            "Float": 100.0
+          }
+        },
+        "scale_width": {
+          "value": {
+            "Float": 100.0
+          }
+        },
+        "shadow": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "shadow_angle": {
+          "value": {
+            "Float": 120.0
+          }
+        },
+        "shadow_blur": {
+          "value": {
+            "Float": 18.0
+          }
+        },
+        "shadow_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "shadow_distance": {
+          "value": {
+            "Float": 3.0
+          }
+        },
+        "shadow_opacity": {
+          "value": {
+            "Float": 55.0
+          }
+        },
+        "shadow_size": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "size": {
+          "value": {
+            "Float": 60.0
+          }
+        },
+        "strikethrough": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "stroke": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "stroke2": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "stroke2_color": {
+          "value": {
+            "Color": [
+              1.0,
+              0.85,
+              0.2,
+              1.0
+            ]
+          }
+        },
+        "stroke2_type": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "stroke2_width": {
+          "value": {
+            "Float": 10.0
+          }
+        },
+        "stroke_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "stroke_type": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "stroke_width": {
+          "value": {
+            "Float": 4.0
+          }
+        },
+        "text": {
+          "value": {
+            "Text": "2023"
+          }
+        },
+        "tracking": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "underline": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "uniform_scale": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "vertical": {
+          "value": {
+            "Bool": false
+          }
+        }
+      },
+      "layer": {
+        "uid": 9
+      }
+    },
+    {
+      "effect": "graphic_text",
+      "enabled": true,
+      "params": {
+        "align": {
+          "value": {
+            "Choice": 1
+          }
+        },
+        "anchor": {
+          "value": {
+            "Vec2": {
+              "x": 0.0,
+              "y": 0.0
+            }
+          }
+        },
+        "background": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "background_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "background_opacity": {
+          "value": {
+            "Float": 75.0
+          }
+        },
+        "background_radius": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "background_size": {
+          "value": {
+            "Float": 12.0
+          }
+        },
+        "baseline_shift": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "box_height": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "box_width": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "caps": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "faux_bold": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "faux_italic": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "fill": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "fill_color": {
+          "value": {
+            "Color": [
+              0.9529412,
+              0.92156863,
+              0.8666667,
+              1.0
+            ]
+          }
+        },
+        "fill_kind": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "font": {
+          "value": {
+            "Text": "Spectral"
+          }
+        },
+        "font_style": {
+          "value": {
+            "Text": "Medium"
+          }
+        },
+        "gradient_angle": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "gradient_end": {
+          "value": {
+            "Color": [
+              0.15,
+              0.15,
+              0.15,
+              1.0
+            ]
+          }
+        },
+        "gradient_start": {
+          "value": {
+            "Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "kerning": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "leading": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "ligatures": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "name": {
+          "value": {
+            "Text": "Label 2023"
+          }
+        },
+        "opacity": {
+          "value": {
+            "Float": 100.0
+          },
+          "keyframes": [
+            {
+              "time": 391999608000,
+              "value": {
+                "Float": 0.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 508540032000,
+              "value": {
+                "Float": 100.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 1440863424000,
+              "value": {
+                "Float": 100.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            },
+            {
+              "time": 1525620095999,
+              "value": {
+                "Float": 0.0
+              },
+              "interp": "Linear",
+              "out_influence": 0.3333333333333333,
+              "in_influence": 0.3333333333333333
+            }
+          ]
+        },
+        "position": {
+          "value": {
+            "Vec2": {
+              "x": 1500.0,
+              "y": 945.0
+            }
+          }
+        },
+        "rotation": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "scale": {
+          "value": {
+            "Float": 100.0
+          }
+        },
+        "scale_width": {
+          "value": {
+            "Float": 100.0
+          }
+        },
+        "shadow": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "shadow_angle": {
+          "value": {
+            "Float": 120.0
+          }
+        },
+        "shadow_blur": {
+          "value": {
+            "Float": 18.0
+          }
+        },
+        "shadow_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "shadow_distance": {
+          "value": {
+            "Float": 3.0
+          }
+        },
+        "shadow_opacity": {
+          "value": {
+            "Float": 55.0
+          }
+        },
+        "shadow_size": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "size": {
+          "value": {
+            "Float": 36.0
+          }
+        },
+        "strikethrough": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "stroke": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "stroke2": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "stroke2_color": {
+          "value": {
+            "Color": [
+              1.0,
+              0.85,
+              0.2,
+              1.0
+            ]
+          }
+        },
+        "stroke2_type": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "stroke2_width": {
+          "value": {
+            "Float": 10.0
+          }
+        },
+        "stroke_color": {
+          "value": {
+            "Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "stroke_type": {
+          "value": {
+            "Choice": 0
+          }
+        },
+        "stroke_width": {
+          "value": {
+            "Float": 4.0
+          }
+        },
+        "text": {
+          "value": {
+            "Text": "Thanked at the Oscars"
+          }
+        },
+        "tracking": {
+          "value": {
+            "Float": 0.0
+          }
+        },
+        "underline": {
+          "value": {
+            "Bool": false
+          }
+        },
+        "uniform_scale": {
+          "value": {
+            "Bool": true
+          }
+        },
+        "vertical": {
+          "value": {
+            "Bool": false
+          }
+        }
+      },
+      "layer": {
+        "uid": 10
+      }
+    }
+  ],
+  "graphic": {
+    "intro": 558835200000,
+    "outro": 101606400000,
+    "designIn": 0,
+    "designDuration": 1525620096000
+  },
+  "controls": [
+    {
+      "id": "text1",
+      "name": "Year 1985",
+      "kind": "text",
+      "layer": 3,
+      "param": "text"
+    },
+    {
+      "id": "text2",
+      "name": "Label 1985",
+      "kind": "text",
+      "layer": 4,
+      "param": "text"
+    },
+    {
+      "id": "text3",
+      "name": "Year 2002",
+      "kind": "text",
+      "layer": 6,
+      "param": "text"
+    },
+    {
+      "id": "text4",
+      "name": "Label 2002",
+      "kind": "text",
+      "layer": 7,
+      "param": "text"
+    },
+    {
+      "id": "text5",
+      "name": "Year 2023",
+      "kind": "text",
+      "layer": 9,
+      "param": "text"
+    },
+    {
+      "id": "text6",
+      "name": "Label 2023",
+      "kind": "text",
+      "layer": 10,
+      "param": "text"
+    }
+  ]
+}

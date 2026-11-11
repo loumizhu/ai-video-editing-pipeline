@@ -1,0 +1,86 @@
+{
+  "schema": "pipeline.color_rules/1",
+  "_comment": "Numbers behind COLOR_SCRIPT.md. All look offsets are RELATIVE to the house grade (presets/documentary-default/style.json grade.*). Units are FilmCraft Lumetri units, measured 2026-11-09 on a gray ramp (8-bit readout): temperature +10 = R +2 / B -2 levels at mid-gray (+4/-4 at level 240); tint +10 = G -2 at mid-gray; blacks +10 = +4 levels at level 16, +2 at 128, 0 at 255; fade (Lumetri faded_film) +20 = +5 at 16, -6 at 240; contrast +20 = -5 at 48, +5 at 208; saturation in percentage points of the house 104; split_levels = largest channel shift (8-bit levels) the shadow/highlight tint makes at the extreme end of the ramp (tint 0.1 off neutral = 7 levels); motif_sat = Lumetri HSL qualifier saturation boost on the motif hue only (100 = none).",
+
+  "defaults": {
+    "intensity": "subtle",
+    "era": "faithful_archival",
+    "arc": "gradual",
+    "bw": "neutral",
+    "motifs": true,
+    "output": "video_strip_cards"
+  },
+  "options": {
+    "intensity": ["subtle", "moderate", "bold"],
+    "era": ["faithful_archival", "light_tone_only", "unified_stylized"],
+    "arc": ["gradual", "sharp"],
+    "bw": ["neutral", "warm_toned", "cool_toned", "per_phase"],
+    "motifs": [true, false],
+    "output": ["video_only", "video_strip_cards"]
+  },
+
+  "intensity_caps": {
+    "_comment": "Largest |offset| a phase may request at each intensity. The plan clamps and logs every clamp. delta_e_budget = mean CIE76 dE of a neutral+skin+primaries reference chart, phase look vs house look; above it the look is nameable ('a filter'). The caps alone allow more than the budget when every one is maxed at once (subtle: 3.6 dE), so a phase has to choose: a strong temperature shift OR strong split-toning, not both. A typical one-idea phase measures about 2 / 3.5 / 5 dE.",
+    "subtle":   {"temperature": 8,  "tint": 5,  "saturation": 12, "contrast": 8,  "blacks": 6,  "fade": 8,  "split_levels": 4,  "grain": 1.5, "vignette": 6,  "motif_sat": 110, "delta_e_budget": 3.0},
+    "moderate": {"temperature": 14, "tint": 8,  "saturation": 20, "contrast": 14, "blacks": 10, "fade": 14, "split_levels": 7,  "grain": 3.0, "vignette": 12, "motif_sat": 120, "delta_e_budget": 5.0},
+    "bold":     {"temperature": 22, "tint": 12, "saturation": 30, "contrast": 20, "blacks": 14, "fade": 20, "split_levels": 10, "grain": 5.0, "vignette": 18, "motif_sat": 130, "delta_e_budget": 7.0}
+  },
+
+  "phases": {
+    "min_count": 3,
+    "target_min": 4,
+    "target_max": 8,
+    "max_count": 10,
+    "min_shift_interval_s": 20.0,
+    "hard_min_shift_interval_s": 12.0,
+    "_shift_comment": "A phase shorter than 20 s = two colour shifts closer than 20 s: WARN. Shorter than 12 s: FAIL unless the phase is marked montage:true (owner-approved montage).",
+    "blend_s": {"min": 2.0, "max": 6.0, "default": 4.0},
+    "blend_step": 0.25,
+    "_blend_comment": "Lumetri has no per-clip look keyframing here, so a gradual blend is stepped at the cuts: each shot that starts inside the blend window gets the look interpolated at its midpoint, quantised to 0.25. With 3.5-4.5 s shots a 4 s blend is 1-2 intermediate shots. A hard-cut shift needs a story reason (shock, loss, sudden change).",
+    "identity_min_delta_e": 1.0,
+    "callback_max_delta_e": 1.0
+  },
+
+  "protection": {
+    "_comment": "Multipliers applied to a phase's offsets per shot. chroma = temperature, tint, split_levels, motif. A shot can carry several roles; the smallest multiplier wins.",
+    "face":     {"chroma": 0.5, "saturation_min": -8, "saturation_max": 4},
+    "document": {"chroma": 0.3, "contrast_min": 0, "blacks_max": 0, "fade_max": 0, "saturation_min": -10, "saturation_max": 0},
+    "archival": {"faithful_archival": {"chroma": 0.6, "grain_max": 0}, "light_tone_only": {"chroma": 0.4, "contrast": 0.5, "saturation": 0.5, "grain_max": 0}, "unified_stylized": {"chroma": 1.0}},
+    "bw_source": {"neutral": {"chroma": 0.0}, "warm_toned": {"chroma": 0.0, "fixed_temperature": 4}, "cool_toned": {"chroma": 0.0, "fixed_temperature": -4}, "per_phase": {"chroma": 0.5}},
+    "graphics": "Generated plates and house graphics (maps, cards, keyword pops, lower thirds) are NEVER graded: their colour comes from the house palette. Only photographs and footage on V1 are graded.",
+    "bw_detect_chroma": 4.0,
+    "face_subjects": ["face", "person", "portrait", "people", "crowd"],
+    "document_subjects": ["document", "text", "newspaper", "article", "letter", "map", "clipping", "sign"]
+  },
+
+  "normalize": {
+    "_comment": "Step 2.1: per-image cast correction toward the phase look. Measured on near-neutral pixels only (chroma < neutral_chroma, luma 40-215); skipped when fewer than min_neutral_share of pixels qualify (a sunset or a forest is not a cast). Corrects `strength` of the measured cast, never more than max_temperature / max_tint. Exposure is never auto-corrected: NEIGHBOR_JUMP in QA names the shot and the agent sets grade_adjust.exposure by hand.",
+    "neutral_chroma": 12.0,
+    "min_neutral_share": 0.05,
+    "cast_threshold_levels": 3.0,
+    "strength": 0.5,
+    "max_temperature": 8,
+    "max_tint": 6,
+    "temperature_per_level": 2.5,
+    "tint_per_level": 5.0,
+    "grade_adjust_caps": {"exposure": 0.4, "temperature": 10, "tint": 8}
+  },
+
+  "qa": {
+    "text_contrast_drop_max": 0.03,
+    "clip_increase_fail_pts": 1.0,
+    "clip_increase_warn_pts": 0.3,
+    "skin_hue_shift_max_deg": 6.0,
+    "skin_sat_change_max": 0.15,
+    "neighbor_luma_warn": 25.0,
+    "accent_contrast_min": 3.0,
+    "overgrade_scale": 0.7,
+    "flicker_alternations_warn": 3
+  },
+
+  "pairing": {
+    "_comment": "Step 4. Advisory, read by stage 04 (music) and 07b (graphics). Not universal colour meanings: the phase's own intent decides; these only keep grade, pace and sound pulling the same way.",
+    "pace": {"tense_fast": "contrast >= 0, saturation <= 0, blacks <= 0", "slow_reflective": "contrast <= 0, fade or blacks lift allowed", "documentary_standard": "any", "shorts_vertical": "inherit the master's phase looks"},
+    "text": "On-screen text stays house off-white; the phase accent may colour a keyword pop / highlight only if it reaches 3:1 contrast against its plate (checked by color_script.py plan)."
+  }
+}

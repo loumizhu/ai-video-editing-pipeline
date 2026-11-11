@@ -1,0 +1,26 @@
+{
+  "preset_name": "shorts-vertical",
+  "version": "3.0.0",
+  "description": "Publora Channel House Style - overrides for 9:16 vertical video (Shorts, Reels, TikTok). Everything not listed here is inherited from base_preset.",
+  "base_preset": "documentary-default",
+  "canvas": {
+    "width": 1080,
+    "height": 1920,
+    "safe_margin_x": 90,
+    "safe_margin_top": 300,
+    "safe_margin_bottom": 470
+  },
+  "typography": {
+    "sizes": {
+      "keyword_pop": 120
+    }
+  },
+  "layout": {
+    "keyword_pop": {
+      "center_x": 540,
+      "center_y": 875,
+      "in_frames": 10,
+      "out_frames": 10
+    }
+  }
+}

@@ -1,0 +1,42 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environments and credentials
+.env
+.env.*
+ApiKeys.ini
+*.pem
+*.key
+
+# Audio and video files generated during editing runs
+*.mp4
+*.mkv
+*.mov
+*.avi
+*.mp3
+*.wav
+# Keep bundled preset SFX assets
+!video_pipeline/presets/documentary-default/sfx/*.wav
+
+# Project scratch and temporary run directories
+*.fcproj
+temp_can_del_later/
+.orchestrator/_runs/
+scratch/
+_archive/
+
+# Operating system metadata
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# IDE and editor configurations
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace

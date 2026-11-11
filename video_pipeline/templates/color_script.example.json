@@ -1,0 +1,50 @@
+{
+  "schema": "pipeline.color_script/1",
+  "_comment": "Written by the colour-script agent at Stage 06b, after beat_map.json. Phases are given by BEAT id (from_beat/to_beat), never by timecode: code maps beats to time. Offsets are relative to the house grade, in the units of presets/color/color_rules.json. Omitted fields = 0. Checked by: python tools/color_script.py plan ...",
+
+  "options": {"intensity": "subtle", "era": "faithful_archival", "arc": "gradual", "bw": "neutral", "motifs": true, "output": "video_strip_cards"},
+
+  "story_logic": "The boy's home in Ohio is the only warm place in the story: warmth = being held by family. The city that takes the ticket is drained and faintly green-gray, the colour of the courtroom photographs. Warmth comes back only once, when the letter arrives, and it is weaker than before: he is not a child any more.",
+
+  "base_look": {},
+
+  "motifs": [
+    {"id": "M1", "name": "the gold ticket", "hex": "#C9A13B", "meaning": "the promise; brightest when it is new, gone when it is taken", "per_phase": {"P1": 1.0, "P2": 0.6, "P3": 0.0, "P5": 0.4}}
+  ],
+
+  "phases": [
+    {"id": "P1", "name": "Ohio, before", "from_beat": "B001", "to_beat": "B024",
+     "intent": "safety, home, a promise in a pocket",
+     "reason": "Establishes the warm reference the rest of the story loses (story_logic).",
+     "palette": ["#E8C9A0", "#C98B5A", "#F4E9D8"], "accent": "#C9A13B", "music": "warm, close, solo piano",
+     "temp": 5, "sat": -3, "contrast": -3, "blacks_lift": 2,
+     "shadow_tone": "#6B4A32", "highlight_tone": "#FFE9C7", "split_levels": 2,
+     "grain": 0, "vignette": 2, "motif": "M1"},
+    {"id": "P2", "name": "The city", "from_beat": "B025", "to_beat": "B061",
+     "intent": "displacement, being looked at",
+     "reason": "B025 is the arrival: the warmth drains over one blend so the viewer feels the distance from home.",
+     "palette": ["#9AA39A", "#5E6B66", "#D9DCD4"], "music": "sparse, room tone, low strings",
+     "temp": -3, "tint": -2, "sat": -8, "contrast": 3,
+     "shadow_tone": "#2F4F4F", "highlight_tone": "#E6E9E2", "split_levels": 3,
+     "motif": "M1", "transition_in": {"type": "blend", "seconds": 5}},
+    {"id": "P3", "name": "The court", "from_beat": "B062", "to_beat": "B097",
+     "intent": "pressure, institutions closing in",
+     "reason": "Matches the courtroom photographs themselves (green-gray, hard light); tension beats B070-B090 at intensity 4-5.",
+     "palette": ["#7D857C", "#3C4440", "#C8CCC2"], "music": "pulse, no melody",
+     "temp": -5, "tint": -3, "sat": -12, "contrast": 7, "blacks": -2, "vignette": 5,
+     "transition_in": {"type": "blend", "seconds": 4}},
+    {"id": "P4", "name": "The ticket is taken", "from_beat": "B098", "to_beat": "B109",
+     "intent": "loss, emptiness after the fight",
+     "reason": "B098 is the ruling: the story cuts hard, so the colour does too. The court's hard contrast collapses into a washed, lifted flatness: nothing left to push against.",
+     "palette": ["#8A8D88", "#4A4D4A", "#C9CAC4"], "music": "silence, then one low note",
+     "temp": -2, "sat": -10, "contrast": -3, "fade": 6,
+     "transition_in": {"type": "cut", "reason": "the ruling (B098) is a sudden loss"}},
+    {"id": "P5", "name": "The letter", "from_beat": "B110", "to_beat": "B140",
+     "intent": "a smaller warmth, grown up",
+     "reason": "Callback to Ohio when the letter arrives, deliberately weaker (story_logic: he is not a child any more).",
+     "palette": ["#D9C2A2", "#A9825E", "#EFE6D8"], "accent": "#C9A13B", "music": "the P1 piano theme, slower",
+     "temp": 4, "sat": -5, "contrast": -2, "blacks_lift": 1,
+     "shadow_tone": "#6B4A32", "highlight_tone": "#FFE9C7", "split_levels": 2,
+     "motif": "M1", "callback_of": "P1", "callback_variation": "weaker on purpose: he is not a child any more", "transition_in": {"type": "blend", "seconds": 6}}
+  ]
+}

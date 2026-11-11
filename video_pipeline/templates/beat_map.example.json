@@ -1,0 +1,10 @@
+{
+  "schema": "pipeline.beat_map/1",
+  "_comment": "One row per beat id from beats.json / shot plan. AI rates; code maps beat -> time. emotion: calm|tension|grief|joy|neutral. intensity 1-5. function: hook|exposition|turn|reveal|payoff|breather. info_type: person|place|number|date|quote|document|object|contrast|list|abstract. priority 1-5 (5 = never cut). Intensity 5 on at most 20% of beats; >= 3 distinct levels per chapter.",
+  "beats": [
+    { "beat": "B001", "emotion": "tension", "intensity": 4, "function": "hook", "info_type": "object", "anchor_phrase": "a gold ticket in a coat pocket", "priority": 5, "evidence": "cold open, concrete object, stakes implied" },
+    { "beat": "B002", "emotion": "neutral", "intensity": 2, "function": "exposition", "info_type": "date", "anchor_phrase": "in the spring of 1971", "priority": 3, "evidence": "plain timeline sentence" },
+    { "beat": "B003", "emotion": "calm", "intensity": 2, "function": "exposition", "info_type": "person", "anchor_phrase": "a twelve-year-old from Ohio", "priority": 3, "evidence": "first appearance of the subject" },
+    { "beat": "B004", "emotion": "grief", "intensity": 3, "function": "breather", "info_type": "abstract", "anchor_phrase": "nobody called him after that", "priority": 2, "evidence": "short, slow, falling cadence" }
+  ]
+}

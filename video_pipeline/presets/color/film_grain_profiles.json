@@ -1,0 +1,148 @@
+{
+  "schema": "pipeline.film_grain_profiles/1",
+  "_comment": "Narrative-driven celluloid film grain profiles and mathematical parameters for organic texture synthesis. Follows Hollywood Colorist and Film Craft Chemist rules: midtone luminance masking, monochromatic silver halide (0% chroma noise), temporal randomness, post-grade/pre-sharpening ordering.",
+  "rules": {
+    "luminance_masking": {
+      "shadow_cutoff_percent": 15,
+      "highlight_cutoff_percent": 85,
+      "formula": "max(0, 4 * Y * (1 - Y))^1.2",
+      "description": "Grain lives in midtones (~18-70% luma); suppressed in blacks (<15%) and whites (>85%)."
+    },
+    "monochromatic_base": {
+      "chroma_noise_saturation": 0.0,
+      "description": "0% color noise. Silver halide crystals are structural texture, not RGB rainbow noise."
+    },
+    "temporal_randomness": {
+      "sync_framerate": true,
+      "loop_freeze_prevention": true,
+      "description": "Noise animates frame-to-frame matching sequence fps (23.976/24/30 CFR)."
+    },
+    "execution_pro_tips": {
+      "upscale_4k_multiplier": 1.85,
+      "pipeline_order": "Input -> Color Grade / Look LUT -> Film Grain -> Master Sharpening -> Render",
+      "web_compression_buffer_percent": 2.0
+    }
+  },
+  "profiles": {
+    "profile_a_clean_modern_cinema": {
+      "id": "grain.clean_35mm",
+      "name": "Clean Modern Cinema (The Fincher Look)",
+      "simulated_stock": "Kodak Vision3 50D (5203)",
+      "narrative_context": "High-end commercial, corporate, sleek modern drama, thriller, sci-fi. Adds tactile depth to digital sensors without looking retro.",
+      "settings": {
+        "grain_size": 0.08,
+        "intensity_percent": 3.0,
+        "softness": 0.0,
+        "contrast": 1.0,
+        "luma_placement": "tight_midtones",
+        "chroma_saturation": 0.0,
+        "gate_weave_px": 0.0
+      },
+      "filmcraft": {
+        "native_noise_amount": 1.5,
+        "v4_overlay_mode": "Overlay",
+        "v4_overlay_opacity": 15.0
+      },
+      "davinci_resolve": {
+        "ofx_preset": "35mm 50D",
+        "grain_size": 0.08,
+        "grain_strength": 0.12,
+        "saturation": 0.0,
+        "shadows": 0.08,
+        "midtones": 1.0,
+        "highlights": 0.10
+      },
+      "ffmpeg_filter": "noise=c0s=3:allf=t+u:c0f=u,lut=y='val'"
+    },
+    "profile_b_classic_hollywood": {
+      "id": "grain.classic_35mm",
+      "name": "Classic Hollywood / Cinematic Drama",
+      "simulated_stock": "Kodak Portra 400 / Fujifilm Eterna 500",
+      "narrative_context": "Character-driven pieces, indie films, period dramas, human interest stories, music videos. Warm, nostalgic, deeply human.",
+      "settings": {
+        "grain_size": 0.20,
+        "intensity_percent": 8.0,
+        "softness": 0.10,
+        "contrast": 1.1,
+        "luma_placement": "broad_midtones",
+        "chroma_saturation": 0.0,
+        "gate_weave_px": 0.0
+      },
+      "filmcraft": {
+        "native_noise_amount": 3.0,
+        "v4_overlay_mode": "Overlay",
+        "v4_overlay_opacity": 30.0
+      },
+      "davinci_resolve": {
+        "ofx_preset": "35mm 400T",
+        "grain_size": 0.20,
+        "grain_strength": 0.28,
+        "saturation": 0.0,
+        "shadows": 0.12,
+        "midtones": 1.0,
+        "highlights": 0.18
+      },
+      "ffmpeg_filter": "noise=c0s=7:allf=t+u:c0f=u"
+    },
+    "profile_c_gritty_documentarian": {
+      "id": "grain.gritty_16mm",
+      "name": "Gritty / Documentarian / Action (The 16mm Look)",
+      "simulated_stock": "16mm celluloid (Kodak Vision3 500T 7219)",
+      "narrative_context": "Gritty flashbacks, raw sports documentaries, war films, urban street style, intense investigative drama. Immediate, low-budget, real.",
+      "settings": {
+        "grain_size": 0.40,
+        "intensity_percent": 15.0,
+        "softness": 0.05,
+        "contrast": 1.35,
+        "luma_placement": "midtones_and_low_mids",
+        "chroma_saturation": 0.0,
+        "gate_weave_px": 0.0
+      },
+      "filmcraft": {
+        "native_noise_amount": 5.0,
+        "v4_overlay_mode": "Overlay",
+        "v4_overlay_opacity": 48.0
+      },
+      "davinci_resolve": {
+        "ofx_preset": "16mm 500T",
+        "grain_size": 0.40,
+        "grain_strength": 0.45,
+        "saturation": 0.0,
+        "shadows": 0.18,
+        "midtones": 1.0,
+        "highlights": 0.25
+      },
+      "ffmpeg_filter": "noise=c0s=14:allf=t+u:c0f=u"
+    },
+    "profile_d_vintage_archive": {
+      "id": "grain.vintage_8mm",
+      "name": "Vintage Archive / Memory Fragment (The 8mm Look)",
+      "simulated_stock": "Super 8 / 8mm film",
+      "narrative_context": "Dream sequences, deep memories, home-video aesthetic, highly stylized fashion, historic archival flashbacks.",
+      "settings": {
+        "grain_size": 0.70,
+        "intensity_percent": 25.0,
+        "softness": 0.20,
+        "contrast": 1.5,
+        "luma_placement": "prominent_overall_with_highlight_preservation",
+        "chroma_saturation": 0.0,
+        "gate_weave_px": 1.5
+      },
+      "filmcraft": {
+        "native_noise_amount": 8.0,
+        "v4_overlay_mode": "Overlay",
+        "v4_overlay_opacity": 65.0
+      },
+      "davinci_resolve": {
+        "ofx_preset": "8mm",
+        "grain_size": 0.70,
+        "grain_strength": 0.65,
+        "saturation": 0.0,
+        "shadows": 0.22,
+        "midtones": 1.0,
+        "highlights": 0.30
+      },
+      "ffmpeg_filter": "noise=c0s=24:allf=t+u:c0f=u"
+    }
+  }
+}

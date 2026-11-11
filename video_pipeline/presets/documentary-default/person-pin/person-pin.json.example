@@ -1,0 +1,12 @@
+{
+  "People": [
+    {
+      "Name": "Peter Ostrum",
+      "Role": "Charlie Bucket, 1971",
+      "X": 835,
+      "Y": 265,
+      "Dir": "left",
+      "Length": 110
+    }
+  ]
+}
